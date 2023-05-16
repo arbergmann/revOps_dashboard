@@ -13,8 +13,12 @@ def load_data():
     purchases['opportunity_created'] = pd.to_datetime(purchases['opportunity_created'])
     purchases['date_purchased'] = pd.to_datetime(purchases['date_purchased'])
     purchases['pct_financed'] = np.where(purchases['financed'] == False, 0, purchases['pct_financed']) # Formatting data where Mockaroo would not cooperate
+    purchases['month'] = purchases['date_purchased'].dt.month
 
     opportunities['opportunity_created'] = pd.to_datetime(opportunities['opportunity_created'])
+    opportunities['month'] = opportunities['opportunity_created'].dt.month
+    
     competitors['date_purchased'] = pd.to_datetime(competitors['date_purchased'])
+    competitors['month'] = competitors['date_purchased'].dt.month
 
     return purchases, opportunities, competitors
