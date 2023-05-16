@@ -205,7 +205,7 @@ def fig_qoq_sales(make_value, model_value):
 def fig_sunburst(make_value, model_value):
     if (make_value is None) and (model_value is None):
         data = purchases.copy()
-        pth = ['car_make', 'car_model', 'car_year', 'car_color']
+        pth = ['car_make', 'car_model', 'car_year']
     elif (make_value is not None) and (model_value is None):
         data = purchases[purchases['car_make'] == make_value]
         pth = ['car_model', 'car_year', 'car_color']
@@ -220,6 +220,26 @@ def fig_sunburst(make_value, model_value):
     return fig
 
 
+# Competitor Analysis Breakdown
+@app.callback(Output(component_id='sunburst', component_property='figure'),
+              Input(component_id='make_dd', component_property='value'),
+              Input(component_id='model_dd', component_property='value'))
+def fig_competitor(make_value, model_value):
+    if (make_value is None) and (model_value is None):
+        data = purchases.copy()
+        pth = ['car_make', 'car_model', 'car_year']
+    elif (make_value is not None) and (model_value is None):
+        data = purchases[purchases['car_make'] == make_value]
+        pth = ['car_model', 'car_year', 'car_color']
+    else:
+        data = purchases[(purchases['car_make'] == make_value) & (purchases['car_model'] == model_value)]
+        pth = ['car_model', 'car_year', 'car_color']
+
+    fig = px.sunburst(data, 
+                      path=pth, 
+                      values='purchase_price', 
+                      title='Sales Breakdown by Type')
+    return fig
 
 
 

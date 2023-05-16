@@ -5,6 +5,13 @@ import numpy as np
 
 
 def purchase_count(data):
+    """ Calculate the count of purchases made.
+    Arguments:
+    data (DataFrame) -- purchase data loaded in from csv
+
+    Returns:
+    purchase count (int) -- a count of the purchases
+    """
     return np.count_nonzero(~np.isnan(data['date_purchased']))
 
 def opportunity_count(purchase_data, opportunity_data):

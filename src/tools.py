@@ -3,8 +3,17 @@ import pandas as pd
 import numpy as np
 
 def load_data():
+    """ Load the data into the code from csv files.
+    Arguments:
+    None
+
+    Returns:
+    purchases (DataFrame) -- a dataframe of purchase data
+    opportunities (DataFrame) -- a dataframe of opportunity data
+    competitors (DataFrame) -- a dataframe of competitor data
+    """
     # Import data
-    pth = os.getcwd()
+    pth = os.path.dirname(os.getcwd()) # Go up one directory
     purchases = pd.read_csv(pth+"/assets/purchases.csv", index_col='id')
     opportunities = pd.read_csv(pth+"/assets/opportunities.csv", index_col='id')
     competitors = pd.read_csv(pth+"/assets/competitor_data.csv", index_col='id')
