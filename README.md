@@ -33,6 +33,7 @@ All brainstorming ideas, mock-ups, and decision logs can be found the `decision_
 
 <br>
 <br>
+
 <!-- RUN THE CODE -->
 ## How to Run the Code
 
@@ -57,6 +58,7 @@ python3 dashboard_app.py
 
 <br>
 <br>
+
 <!-- CHALLENGES -->
 ## Challenges
 
@@ -71,6 +73,9 @@ Initially, the code was written fairly cleanly. I had a single callback for the 
 The code was struggling to render for some reason. I tested previous codes that I had used similar setups for, and they were working fine (not an issue with deprecation, etc.), and the debug error messages were not offering any help in figuring out what part of the code was not passing through properly. For the sake of getting some sort of MVP working, I decided to just refactor the code a bit to include it in the `app.layout...` portion. This is not my favorite way to set these up.
 
 I ended up using a conda environment, for no other reason but because I used it on my last project and it was fresh in my brain as the default. Otherwise, I typically use pip or venv.
+
+<br>
+<br>
 
 <!-- FUTURE CONSIDERATIONS -->
 ## Future Considerations
