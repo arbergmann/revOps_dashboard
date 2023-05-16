@@ -17,7 +17,7 @@ Overall, this data is meant to be extremely "mock". Without extensive coding, th
 The more I worked on this, the more I grew to think of it as product categories (make) and product offerings (models). Many of the principles here could be applied to something like retail or online services with multiple different product lines. If it helps to think of it more like that, perhaps that would be preferred until I can change out data to something that makes more sense.
 
 <b>Data Sources</b>
-<i>All data are from Mockaroo <i>
+<i>All data are from Mockaroo </i>
 - Purchase data
 - Opportunity data
 - Competitor data
@@ -52,8 +52,6 @@ python3 dashboard_app.py
 ```
 7) A localhost IP number will generate where you can access the development server to run the dashboard. Copy and pase this into a browser window.
 
-This project leverages a conda environment.
-
 
 <!-- CHALLENGES -->
 ## Challenges
@@ -73,10 +71,14 @@ I ended up using a conda environment, for no other reason but because I used it 
 <!-- FUTURE CONSIDERATIONS -->
 ## Future Considerations
 
-Given more time, I would make this code much more flexible and clean. A the time of initial writing, I focused on getting something up and running, but that meant sometimes making sacrifices in approach and dynamic coding. For example, the calculations of the overall statistics assume all data is clean and consistent. In reality, this will not always be the case. Some of this could be helped with including unit tests, etc., but I simply ran out of time. I would also like to make the code more modular, leveraging the `chart_functions.py` file properly, as mentioned above.
+Given more time, I would make this code much more flexible and clean. A the time of initial writing, I focused on getting something up and running in the time I had left, but that meant sometimes making sacrifices in approach and dynamic coding. For example, the calculations of the overall statistics assume all data is clean and consistent. In reality, this will not always be the case. Some of this could be helped with including unit tests, etc., but I simply ran out of time. I would also like to make the code more modular, leveraging the `chart_functions.py` file properly, as mentioned above.
 
-I would like to expand out the chart offerings, as mentioned in the `Brainstorming` tab of the `decision_log.xlsx` file. I think I was limited on my data to begin with, and this ended up requiring me to make some concessions as time was running out. Obviously, in reality, this would be far more dependent on client needs, as well.
+Some of the calculations were fairly rudimentary due to time constraints. I'd like to really dig into some of them more and flesh them out, check for contingencies that need to be incorporated, etc.
+
+I would like to expand out the chart offerings, as mentioned in the `Brainstorming` tab of the `decision_log.xlsx` file. I think I was limited on my data to begin with, and this ended up requiring me to make some concessions as time was running out. Obviously, in reality, this would be far more dependent on client needs, as well. I'd also like to make the drop downs to have multiple options. Since there are so any individualized makes/models, if perhaps you could choose 2-3 instead of all or nothing, that would lend itself better to insights.
 
 I felt the charts fell a little flat in terms of creativity and uniqueness, so I would like to expand on them more. I would like to add some predictive modeling as well, as data science is my first priority domain.
 
-I'd also like to improve layout and formatting. This feels sterile and blah in the current state.
+I'd also like to improve layout and formatting. This feels sterile and blah in the current state, and the axes clearly need some TLC.
+
+I also really just want to clean up the code a bit. It's not pretty, and I left some commented out areas for myself for some testing purposes in there, so I have them to work with later on.
