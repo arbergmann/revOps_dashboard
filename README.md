@@ -17,7 +17,6 @@ Overall, this data is meant to be extremely "mock". Without extensive coding, th
 The more I worked on this, the more I grew to think of it as product categories (make) and product offerings (models). Many of the principles here could be applied to something like retail or online services with multiple different product lines. If it helps to think of it more like that, perhaps that would be preferred until I can change out data to something that makes more sense.
 
 <b>Data Sources</b>
-<br>
 <i>All data are from Mockaroo </i>
 - Purchase data
 - Opportunity data

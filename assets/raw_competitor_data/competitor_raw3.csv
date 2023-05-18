@@ -1,0 +1,1001 @@
+id,date_purchased,company,car_make,car_model,car_year,car_color,purchase_price
+1,2020-11-08,Maggio LLC,Mitsubishi,Mighty Max Macro,1992,Turquoise,45035
+2,2022-10-31,"Hintz, Schmitt and Gulgowski",Dodge,Ram 2500,1998,Turquoise,23977
+3,2019-11-29,Herman-Wyman,Ford,Expedition,2003,Fuscia,22228
+4,2021-09-23,Raynor Group,Dodge,Ram Van B150,1994,Crimson,39161
+5,2019-03-15,"Waters, Connelly and Swaniawski",Audi,A6,1997,Yellow,66088
+6,2021-03-01,Flatley-Carroll,Volkswagen,Golf,1998,Green,33118
+7,2021-01-28,Skiles Group,Jeep,Compass,2010,Maroon,14906
+8,2023-02-02,Schuppe Group,GMC,Jimmy,1994,Yellow,53757
+9,2020-04-16,Hegmann-Kuhic,Nissan,NX,1992,Maroon,89616
+10,2020-08-09,Marvin LLC,Jaguar,X-Type,2008,Turquoise,78985
+11,2018-08-28,Monahan and Sons,Bentley,Continental,2012,Fuscia,23141
+12,2020-09-21,Yundt-Medhurst,Oldsmobile,Regency,1998,Violet,54699
+13,2020-07-15,Jaskolski-Murray,Honda,Ridgeline,2006,Maroon,81044
+14,2018-04-10,Ondricka-Hackett,Pontiac,Vibe,2004,Indigo,54415
+15,2018-10-16,Thiel Inc,Nissan,Sentra,1999,Crimson,25276
+16,2020-12-12,Volkman Group,BMW,Z8,2002,Pink,13450
+17,2019-11-28,Baumbach-Fisher,Volkswagen,New Beetle,1999,Violet,21927
+18,2018-05-11,"Strosin, Murazik and Berge",Chevrolet,Camaro,1978,Goldenrod,79864
+19,2020-06-28,Glover Inc,Acura,Integra,1992,Puce,83720
+20,2023-01-20,Ebert Inc,Dodge,Grand Caravan,2006,Fuscia,16749
+21,2021-11-07,Corwin-Balistreri,GMC,Yukon XL 1500,2004,Violet,62101
+22,2020-04-30,"Gleason, Beatty and Brekke",Saab,9-3,2009,Maroon,40249
+23,2023-02-12,"Heathcote, Veum and Mosciski",Chevrolet,3500,1996,Green,15067
+24,2019-02-09,Rodriguez LLC,Nissan,Pathfinder Armada,2004,Puce,68879
+25,2018-08-02,Langworth-Kuphal,Mercedes-Benz,SL-Class,2011,Indigo,60141
+26,2018-09-10,"O'Kon, Rau and Tremblay",Buick,Estate,1990,Yellow,79867
+27,2020-11-09,Kutch Group,Mercedes-Benz,R-Class,2007,Green,36489
+28,2023-05-10,"Ebert, Torphy and Crona",Toyota,Avalon,2001,Yellow,92534
+29,2021-05-18,Reinger LLC,Chrysler,300M,2001,Crimson,26552
+30,2019-04-22,Franecki-Torp,Lincoln,Blackwood,2003,Purple,17394
+31,2018-08-11,"Goodwin, Graham and Weimann",Buick,Century,2004,Crimson,66325
+32,2019-06-08,"Smitham, Shanahan and Stark",Chevrolet,Lumina,1998,Pink,66410
+33,2022-11-01,Toy and Sons,Nissan,Altima,1999,Green,40459
+34,2022-01-15,Von Group,Toyota,Tacoma,2005,Khaki,59981
+35,2021-02-02,Wehner Group,Toyota,Corolla,1998,Maroon,27560
+36,2020-08-17,Blick Group,Buick,Enclave,2009,Orange,18428
+37,2020-03-07,Nicolas-Auer,Mitsubishi,Mirage,1989,Green,74561
+38,2022-05-06,"Zemlak, Fritsch and Orn",Volvo,XC90,2005,Yellow,22891
+39,2022-12-11,Bashirian Group,Lotus,Esprit,1996,Fuscia,85070
+40,2018-05-02,Waters LLC,Chevrolet,Camaro,2000,Indigo,46768
+41,2023-02-14,"Mills, Langosh and Will",Maserati,Quattroporte,1984,Teal,31558
+42,2020-07-18,Cummerata-Hintz,Audi,A6,2007,Indigo,86064
+43,2019-01-22,Kling LLC,Ford,Mustang,1996,Goldenrod,66276
+44,2022-02-23,Feest Group,Chrysler,Voyager,2003,Crimson,44123
+45,2018-10-28,Wisozk-Hettinger,Chevrolet,Express 2500,2007,Yellow,46426
+46,2020-02-15,Langosh-Hammes,Saab,900,1985,Violet,92726
+47,2019-11-27,Runolfsdottir LLC,Jeep,Wrangler,2001,Blue,60801
+48,2022-08-13,"Harvey, Streich and McCullough",Mazda,Millenia,2000,Indigo,34389
+49,2021-07-16,Williamson and Sons,Audi,A6,1995,Violet,69963
+50,2019-05-06,Moore and Sons,Saab,900,1992,Mauv,76320
+51,2021-05-06,Leffler and Sons,Cadillac,Escalade EXT,2009,Orange,69020
+52,2022-12-30,Hammes Group,Acura,RL,1999,Red,66893
+53,2022-11-24,Lakin-Stiedemann,Subaru,Legacy,1989,Purple,80806
+54,2021-10-04,Marvin-Goldner,Saturn,Relay,2007,Yellow,51370
+55,2018-08-12,Corwin-Fritsch,Mitsubishi,Chariot,1989,Puce,28810
+56,2021-04-26,Brakus-Yost,Land Rover,Range Rover,2004,Turquoise,45502
+57,2020-07-14,Purdy and Sons,Mazda,Millenia,2002,Violet,26511
+58,2022-04-10,"Wintheiser, Lind and Mitchell",Toyota,MR2,2004,Turquoise,86902
+59,2023-01-13,"Koss, Sauer and Kulas",Nissan,Rogue,2011,Blue,44711
+60,2022-02-01,"Veum, Gusikowski and Dibbert",Lexus,LS,2004,Indigo,43284
+61,2018-12-30,Graham-Gorczany,Shelby,GT500,1968,Turquoise,14548
+62,2023-05-01,"Ward, Ondricka and Davis",Audi,TT,2002,Purple,17008
+63,2021-11-08,Ebert-Koepp,Audi,TT,2010,Pink,21040
+64,2020-04-04,Balistreri Group,Isuzu,VehiCROSS,2001,Red,50848
+65,2021-02-10,Bernhard-Bradtke,Lincoln,Continental Mark VII,1989,Indigo,63254
+66,2019-08-25,Kub and Sons,Cadillac,Seville,1999,Green,95829
+67,2020-07-19,Schiller-Denesik,Subaru,SVX,1993,Pink,79036
+68,2022-05-22,"Koepp, Franecki and Heller",Cadillac,Escalade ESV,2012,Goldenrod,42129
+69,2020-07-20,Carter-Crooks,Volvo,S60,2005,Indigo,47472
+70,2023-03-28,Krajcik-Mayer,Oldsmobile,Alero,2002,Khaki,76810
+71,2018-08-27,O'Keefe Group,Lexus,GX,2009,Yellow,34002
+72,2020-03-28,Adams Group,Mercury,Sable,2003,Violet,75910
+73,2019-05-19,Dibbert LLC,Lotus,Exige,2007,Green,65642
+74,2020-04-27,Wehner-Heathcote,BMW,3 Series,2009,Purple,82690
+75,2022-07-26,Crist-Mosciski,Toyota,T100 Xtra,1995,Maroon,62246
+76,2019-08-20,Orn and Sons,Toyota,Corolla,1997,Green,57020
+77,2023-03-13,Hintz LLC,Chevrolet,Tracker,2002,Orange,75220
+78,2020-02-12,"Lebsack, Ernser and Harvey",Pontiac,Vibe,2008,Blue,12458
+79,2021-10-25,Rohan Inc,Cadillac,Escalade,2002,Turquoise,89401
+80,2021-05-25,Ziemann Group,Toyota,Tacoma Xtra,1996,Teal,10573
+81,2022-02-22,"Harris, Towne and Ondricka",Mercury,Villager,1994,Purple,62927
+82,2019-05-08,"Gibson, Wiza and Price",GMC,Savana 1500,2002,Crimson,72708
+83,2021-05-02,Lubowitz LLC,Mitsubishi,Outlander Sport,2011,Green,41322
+84,2021-03-09,"Lockman, Gorczany and Beahan",Audi,A8,2006,Blue,70775
+85,2020-10-08,Batz Group,Mitsubishi,Galant,2005,Fuscia,40059
+86,2018-08-01,"Carroll, Renner and Bosco",Suzuki,SX4,2010,Orange,91536
+87,2020-05-21,"Lehner, Batz and Barton",Hyundai,Santa Fe,2009,Purple,29431
+88,2023-04-07,Hodkiewicz Inc,Mitsubishi,GTO,1995,Crimson,43813
+89,2020-02-04,Windler and Sons,Mazda,Mazda6,2009,Crimson,47040
+90,2022-03-22,"Larkin, Ernser and Murphy",Chevrolet,Express 1500,2001,Crimson,25006
+91,2023-04-23,Bergnaum-Ebert,Audi,A6,2011,Goldenrod,58064
+92,2019-07-24,Johns Group,Ford,Mustang,2003,Goldenrod,97198
+93,2018-09-24,Wehner and Sons,Chevrolet,Suburban 2500,1992,Turquoise,61926
+94,2022-06-22,"Ebert, Quigley and Collins",GMC,Sierra 2500,2001,Pink,71421
+95,2020-08-16,Boehm-Marks,Dodge,Sprinter,2009,Puce,23698
+96,2020-10-18,"Raynor, Heathcote and Barrows",Mitsubishi,Pajero,2001,Teal,13608
+97,2021-01-06,"Daugherty, Grant and Ortiz",Toyota,MR2,1987,Blue,71718
+98,2018-06-03,"Roberts, Glover and Koelpin",Mitsubishi,Mirage,1985,Turquoise,69441
+99,2018-04-24,Hagenes LLC,BMW,M Roadster,2007,Purple,22003
+100,2022-12-15,"Turcotte, Schaden and Kuhic",Ford,F150,2010,Mauv,99336
+101,2019-02-21,Jast Group,Mercury,Tracer,1999,Puce,83586
+102,2019-11-18,Ward-Goyette,GMC,Jimmy,1995,Violet,38077
+103,2022-09-12,"Wolff, Heaney and Herman",Scion,xB,2006,Orange,89515
+104,2018-02-04,Medhurst and Sons,Chevrolet,Camaro,2011,Red,87924
+105,2021-05-15,Padberg LLC,Dodge,Durango,2006,Fuscia,83196
+106,2019-02-23,Cronin Inc,Volkswagen,Scirocco,1987,Pink,56210
+107,2021-12-26,Heller Group,Audi,S6,2009,Orange,41633
+108,2021-08-20,Koch and Sons,Chrysler,PT Cruiser,2003,Puce,65892
+109,2022-08-07,Cummings Inc,Toyota,Corolla,1993,Puce,59497
+110,2022-12-21,"Feeney, Nader and Schaefer",Chevrolet,Express 1500,2008,Puce,55382
+111,2018-09-23,"Gusikowski, Strosin and Hills",Mazda,RX-7,1995,Pink,40458
+112,2020-11-17,Shanahan-Heller,Chevrolet,Lumina,2001,Goldenrod,42541
+113,2021-10-10,"Zieme, Hamill and Goyette",Mercedes-Benz,SLR McLaren,2009,Teal,91005
+114,2021-12-30,Deckow-Schowalter,Ford,LTD Crown Victoria,1987,Mauv,35698
+115,2022-05-16,Erdman-Ferry,GMC,Savana 3500,2002,Goldenrod,28123
+116,2018-06-04,Lakin-Sawayn,Chevrolet,Silverado 2500,2010,Goldenrod,39247
+117,2022-07-04,Murray-Kling,Cadillac,STS,2005,Khaki,10561
+118,2020-04-07,"Zulauf, Bailey and Schoen",Mazda,MX-6,1996,Red,15135
+119,2018-06-05,Boehm Group,Mazda,B-Series,2006,Purple,31348
+120,2020-02-21,"Schaefer, Kshlerin and Bergnaum",Chevrolet,Suburban 1500,2011,Violet,84392
+121,2020-06-12,"Zulauf, Kohler and Klocko",Audi,Q5,2010,Maroon,23817
+122,2021-09-07,Schiller and Sons,Lincoln,Continental,1998,Turquoise,60807
+123,2021-11-01,"Lind, Mosciski and Walsh",Saturn,Ion,2003,Yellow,80379
+124,2021-11-12,Casper-Deckow,Mazda,RX-8,2004,Yellow,61834
+125,2018-05-25,Yost Inc,Jaguar,XJ Series,1995,Aquamarine,90631
+126,2022-01-16,Stiedemann Inc,Dodge,Dakota Club,1998,Yellow,79066
+127,2022-07-18,Green Group,Hyundai,Accent,1997,Yellow,91777
+128,2021-01-30,"Stanton, Sipes and Dicki",Mercury,Mountaineer,2005,Crimson,54243
+129,2019-10-24,"Conn, Wuckert and Toy",Chevrolet,Silverado 1500,2011,Maroon,53993
+130,2023-04-21,"Lynch, Gorczany and Stroman",Mercedes-Benz,G55 AMG,2006,Khaki,94839
+131,2019-12-30,Schinner-Dibbert,Mercedes-Benz,300CE,1992,Teal,17407
+132,2018-10-02,Larkin Inc,Ford,F350,2005,Turquoise,16097
+133,2019-01-03,"Kuvalis, Williamson and Murazik",Chevrolet,Traverse,2012,Aquamarine,56857
+134,2019-04-08,"Brown, Christiansen and White",Buick,Skylark,1990,Mauv,21592
+135,2021-09-30,Ullrich-Ward,Chevrolet,1500,1999,Purple,12449
+136,2020-12-17,"Miller, Metz and Tremblay",Saturn,S-Series,1997,Blue,26324
+137,2022-10-04,"Gorczany, Zemlak and Quigley",Mercedes-Benz,E-Class,1992,Mauv,47714
+138,2022-07-08,"Gutkowski, Mills and Altenwerth",Dodge,Journey,2010,Turquoise,78744
+139,2019-05-04,"Homenick, Kohler and Bergstrom",Volkswagen,GTI,1989,Crimson,46171
+140,2022-12-27,Wyman Inc,BMW,3 Series,2002,Purple,91096
+141,2021-12-10,Corwin-Wuckert,Hyundai,Elantra,2002,Green,80534
+142,2021-03-12,"Baumbach, Mayer and Balistreri",Dodge,Dakota Club,2002,Orange,78021
+143,2021-04-17,"Nitzsche, Huels and Pacocha",Dodge,Ram 2500 Club,1997,Violet,69597
+144,2022-09-15,Romaguera-Lowe,Cadillac,CTS-V,2011,Pink,98598
+145,2022-10-31,"Prosacco, Mosciski and Ebert",Chevrolet,Express 2500,2001,Blue,49596
+146,2021-01-23,"Reilly, Stanton and Zboncak",Chevrolet,Express 2500,1998,Puce,43602
+147,2022-07-14,Zboncak-Tillman,Kia,Sportage,2011,Pink,58759
+148,2022-06-03,Schmitt LLC,Buick,Rendezvous,2006,Puce,12124
+149,2018-09-18,"Kassulke, Weissnat and Gerlach",Audi,S4,2008,Puce,42068
+150,2019-12-03,Auer and Sons,Toyota,4Runner,1999,Khaki,51019
+151,2021-06-11,"Schultz, Okuneva and Hilpert",Mitsubishi,Pajero,1988,Khaki,93117
+152,2018-07-05,Ullrich-Auer,Ford,Festiva,1988,Green,12300
+153,2019-04-22,Mertz LLC,Honda,CR-Z,2012,Purple,26855
+154,2021-11-02,Yost-Waters,Geo,Prizm,1993,Violet,52521
+155,2020-07-10,Schinner Inc,Ford,Excursion,2002,Red,73698
+156,2020-11-02,Bogan LLC,Scion,tC,2008,Pink,70260
+157,2020-07-08,"Roob, Langosh and O'Reilly",Porsche,968,1995,Puce,52362
+158,2018-03-08,"Shanahan, Botsford and Boyer",BMW,X6,2011,Maroon,82642
+159,2021-05-30,Nikolaus-Bartell,Isuzu,Rodeo,2004,Khaki,51398
+160,2022-10-09,"Greenholt, Fritsch and Heathcote",Buick,LeSabre,1986,Yellow,37133
+161,2020-03-19,Larkin-Fritsch,Infiniti,Q,2001,Indigo,18378
+162,2021-09-25,Moore-Bartoletti,Ford,Ranger,1988,Fuscia,53892
+163,2018-09-04,Ebert-Becker,Mercury,Lynx,1985,Puce,15272
+164,2019-09-07,Beatty-Labadie,Saab,900,1996,Purple,75409
+165,2023-01-16,Boehm-Krajcik,Nissan,Maxima,1997,Purple,42164
+166,2023-03-03,Deckow-Dietrich,Volkswagen,Cabriolet,1993,Pink,77889
+167,2019-09-21,"Bartell, Mitchell and Grimes",Toyota,Tercel,1992,Mauv,90494
+168,2023-03-07,Schulist Group,BMW,745,2005,Green,66407
+169,2022-05-12,"Parker, Walsh and Pfannerstill",Mitsubishi,Endeavor,2010,Maroon,26334
+170,2021-10-17,Ernser and Sons,Lexus,LS,1991,Mauv,33588
+171,2018-05-01,Senger-Murazik,Ford,E-Series,1990,Green,48128
+172,2019-07-23,"Mayer, Schultz and Mueller",Mitsubishi,Lancer Evolution,2002,Blue,85798
+173,2020-08-31,"Cruickshank, Champlin and Kuhlman",BMW,X6 M,2013,Pink,19564
+174,2018-01-13,Koelpin-Ritchie,Toyota,Echo,2002,Violet,62340
+175,2019-04-21,Klein-Hilll,Lexus,LS,1997,Crimson,39683
+176,2020-05-13,"Labadie, Gulgowski and Mante",Ford,Ranger,2006,Green,71547
+177,2019-08-31,Herzog-Shanahan,Hyundai,Accent,2000,Blue,82010
+178,2021-03-07,Waters Inc,GMC,Savana,2011,Violet,34628
+179,2020-02-05,Hermiston LLC,Nissan,Altima,1997,Maroon,39692
+180,2018-07-13,Stanton Group,Ford,Probe,1996,Aquamarine,73279
+181,2020-03-04,"Schumm, Lehner and Treutel",Lamborghini,Murciélago,2002,Fuscia,21258
+182,2020-11-14,"West, Klein and Harber",Ford,Bronco,1992,Turquoise,28598
+183,2022-10-31,"Smith, Bergnaum and Wolff",Infiniti,Q,2002,Violet,30712
+184,2023-04-24,"Schoen, Blick and Wilderman",Isuzu,Rodeo,2004,Teal,39746
+185,2019-09-29,Watsica Inc,GMC,Sierra 1500,2010,Violet,43160
+186,2018-01-22,O'Reilly-Block,Lamborghini,Countach,1990,Green,47792
+187,2019-04-16,"Hettinger, Bernhard and Zieme",Toyota,Matrix,2007,Fuscia,44181
+188,2022-12-15,Krajcik-Bogisich,Buick,Regal,1989,Green,95092
+189,2020-09-13,Goldner LLC,Cadillac,DTS,2011,Teal,53947
+190,2018-05-08,Hessel and Sons,Mercedes-Benz,300SE,1992,Khaki,31672
+191,2021-10-17,"Mante, Gottlieb and Streich",Lexus,RX,2006,Purple,13454
+192,2022-01-30,"Ruecker, Rolfson and Connelly",Mitsubishi,Tredia,1988,Indigo,48212
+193,2018-12-07,Effertz-Ward,Ford,Crown Victoria,1999,Indigo,20390
+194,2022-01-01,"Bahringer, Monahan and Heller",Subaru,Forester,1999,Mauv,50790
+195,2020-06-24,Mueller-Willms,Ford,Freestar,2006,Violet,18233
+196,2022-12-13,Langosh Inc,Porsche,911,1988,Crimson,68905
+197,2023-02-22,Wisozk and Sons,Chevrolet,Caprice,1992,Pink,47103
+198,2021-12-13,Feil Group,Isuzu,Trooper,1993,Crimson,74012
+199,2022-10-16,Blanda Group,Land Rover,Freelander,2010,Pink,40871
+200,2022-05-24,King Inc,Audi,riolet,1995,Blue,95167
+201,2018-02-13,Luettgen-Yost,Pontiac,Sunbird,1992,Goldenrod,49596
+202,2019-01-09,Bailey-Dach,Nissan,Maxima,2005,Puce,16565
+203,2022-07-16,Funk-Collins,GMC,Safari,1993,Red,34642
+204,2020-06-14,Yost Group,Cadillac,Eldorado,2002,Yellow,71303
+205,2020-08-23,"McLaughlin, Hauck and Swaniawski",Aston Martin,DB9,2006,Goldenrod,74454
+206,2021-04-09,Larkin-Corkery,Ford,Econoline E250,1998,Goldenrod,49584
+207,2020-04-24,Shanahan-Towne,Infiniti,G25,2012,Fuscia,36319
+208,2022-11-18,"Tremblay, Heller and Auer",Dodge,Charger,1999,Mauv,56175
+209,2019-12-25,"Kuphal, Christiansen and Harber",Dodge,Caravan,2012,Fuscia,71366
+210,2020-10-30,Cummings Inc,Cadillac,XLR-V,2006,Aquamarine,69209
+211,2019-11-21,Tromp Group,Mitsubishi,Truck,1990,Pink,69881
+212,2019-11-26,Hodkiewicz Inc,Infiniti,QX56,2007,Turquoise,40999
+213,2019-11-19,Rolfson Inc,Chevrolet,Equinox,2006,Khaki,71406
+214,2022-10-19,"Johnston, Wolff and Heaney",Subaru,Justy,1988,Teal,91419
+215,2021-07-15,Bosco-Dare,Porsche,Cayenne,2006,Mauv,53525
+216,2021-02-23,Watsica-Pagac,Buick,Riviera,1991,Purple,85592
+217,2022-03-29,Wiegand and Sons,Jeep,Cherokee,1995,Red,95017
+218,2023-02-13,Hyatt Group,Oldsmobile,Ciera,1996,Fuscia,99608
+219,2022-10-07,"Schultz, Strosin and Dickinson",Mazda,MX-6,1991,Pink,33849
+220,2019-03-27,Fay Inc,Chevrolet,Caprice,1994,Crimson,18931
+221,2018-09-30,Bednar and Sons,Ford,E250,2007,Orange,50805
+222,2018-11-05,"Moore, Waters and Schamberger",Hyundai,Sonata,1992,Teal,33199
+223,2019-04-09,Witting LLC,Ford,F250,2007,Mauv,96473
+224,2021-01-16,Morar and Sons,Subaru,Loyale,1994,Fuscia,34613
+225,2021-03-24,Toy Inc,Chrysler,300,2010,Aquamarine,47165
+226,2018-11-06,"Tremblay, Kemmer and MacGyver",Audi,S4,2001,Mauv,28247
+227,2020-11-26,Mann and Sons,Nissan,240SX,1995,Teal,48538
+228,2018-02-14,Bosco Group,Saturn,S-Series,1996,Teal,40863
+229,2020-07-23,Renner-Osinski,Ford,Courier,1986,Teal,45091
+230,2020-03-15,Yundt-Lowe,Bentley,Azure,2006,Maroon,83616
+231,2020-07-27,"O'Keefe, Grimes and Sanford",Nissan,Datsun/Nissan Z-car,1990,Puce,38792
+232,2021-05-22,"Deckow, Streich and Ward",Pontiac,Grand Prix,1962,Aquamarine,27064
+233,2019-11-10,"Nicolas, Koepp and Lemke",GMC,Sierra 3500,2009,Fuscia,29811
+234,2019-09-07,Gutkowski-Marquardt,Lincoln,Navigator,2003,Fuscia,88864
+235,2020-12-27,Leuschke LLC,Rolls-Royce,Phantom,2011,Indigo,58553
+236,2018-08-12,Walsh LLC,Pontiac,Bonneville,1995,Teal,70723
+237,2023-01-19,"Harvey, Kassulke and Hudson",Maybach,62,2005,Pink,53692
+238,2020-11-11,Kertzmann Group,Mazda,MPV,1994,Purple,10170
+239,2022-12-12,"Kunze, Schinner and Zemlak",Toyota,Solara,2002,Pink,96379
+240,2020-12-30,"Swaniawski, Koss and Hegmann",Lexus,RX,2004,Puce,14258
+241,2019-09-24,"Blanda, Runolfsdottir and Reilly",Infiniti,G,2005,Green,20039
+242,2020-03-12,"Sauer, Moore and Osinski",Subaru,Outback,2001,Fuscia,99680
+243,2020-01-11,"Bechtelar, Ferry and Balistreri",Toyota,T100 Xtra,1995,Red,86775
+244,2020-08-24,Kuhn LLC,Lexus,CT,2012,Crimson,67553
+245,2021-06-07,Johnson-Volkman,Porsche,911,2002,Orange,13731
+246,2019-12-07,Kilback-Schiller,Pontiac,Grand Prix,2008,Puce,60309
+247,2021-03-29,"Blanda, Kirlin and Hegmann",GMC,Yukon,2000,Goldenrod,91056
+248,2018-09-05,"Nolan, Hoppe and Howell",Pontiac,GTO,1968,Crimson,21204
+249,2018-12-07,Adams-Shanahan,GMC,Sierra 2500,2000,Maroon,30171
+250,2023-02-08,Armstrong LLC,Volvo,960,1996,Crimson,45738
+251,2018-12-16,Rowe-Botsford,Chevrolet,Aveo,2011,Crimson,31475
+252,2018-10-04,Torp-Muller,Volkswagen,Quantum,1984,Turquoise,54841
+253,2019-12-14,West-Reilly,Dodge,Intrepid,1999,Violet,24587
+254,2018-08-07,"Graham, Nitzsche and Pollich",Chevrolet,Express 2500,1998,Khaki,74922
+255,2018-05-11,Ernser LLC,Ford,E-Series,2005,Indigo,67819
+256,2019-10-03,Zulauf Group,Cadillac,Catera,2000,Goldenrod,11102
+257,2022-12-03,"Raynor, Goldner and Schowalter",Toyota,Corolla,2008,Aquamarine,53370
+258,2018-04-20,"Greenholt, Lebsack and Heidenreich",Plymouth,Colt,1992,Blue,40006
+259,2020-11-23,Strosin Inc,Infiniti,G,2001,Indigo,11540
+260,2020-05-21,Ankunding Inc,Jeep,Wrangler,2002,Orange,53521
+261,2018-04-17,"Price, Emard and Braun",Toyota,Sequoia,2011,Pink,25964
+262,2021-04-26,"Murray, Hoeger and Funk",Nissan,Pathfinder,1997,Yellow,80672
+263,2023-03-31,"Nikolaus, Ferry and Crooks",Cadillac,STS,2006,Purple,96434
+264,2019-08-23,O'Kon and Sons,Ford,Bronco,1985,Indigo,60132
+265,2022-11-18,Jaskolski-Murphy,Mercury,Villager,2000,Aquamarine,95646
+266,2018-07-31,"Kassulke, Rodriguez and Lind",Audi,A8,2002,Violet,75670
+267,2020-02-28,"Towne, Kuvalis and Auer",Ford,Fusion,2012,Khaki,32516
+268,2018-09-19,Kemmer LLC,Ford,Mustang,1987,Fuscia,54434
+269,2019-05-15,"Senger, Nader and Hayes",Isuzu,Rodeo,2003,Turquoise,91290
+270,2020-03-19,Crooks Group,Chevrolet,Suburban 2500,1998,Fuscia,41995
+271,2019-04-01,Larkin and Sons,Ford,F-Series,2001,Orange,99645
+272,2018-12-21,Labadie Group,Buick,Century,1987,Maroon,61919
+273,2022-03-17,Lynch Inc,Chevrolet,Equinox,2011,Yellow,85738
+274,2019-01-13,Upton-Cremin,Infiniti,I,2001,Khaki,36742
+275,2021-03-21,Mann-Bosco,BMW,3 Series,1992,Fuscia,19991
+276,2023-04-02,Lehner Group,Volvo,XC70,2003,Turquoise,75327
+277,2020-03-16,"Labadie, Larson and Vandervort",Volvo,S80,2000,Maroon,37106
+278,2021-01-19,Armstrong Group,Toyota,Matrix,2005,Turquoise,16190
+279,2022-04-08,Luettgen-Glover,Honda,Civic,1997,Aquamarine,50865
+280,2019-08-04,McCullough-Runolfsson,Mercedes-Benz,S-Class,1998,Turquoise,78275
+281,2022-10-01,Douglas-Kreiger,Lincoln,Town Car,1994,Violet,68608
+282,2018-08-24,Pollich-Reichert,Ford,Bronco II,1988,Purple,75705
+283,2019-02-21,Ferry-Schulist,Nissan,Armada,2006,Green,17875
+284,2020-11-24,Mueller LLC,Lincoln,Continental Mark VII,1986,Green,64153
+285,2018-11-27,"Treutel, Walsh and Hartmann",Hyundai,Santa Fe,2007,Puce,92585
+286,2020-01-25,"Morissette, Volkman and Steuber",Subaru,Leone,1989,Indigo,46946
+287,2021-02-11,"Kertzmann, Hand and Johns",Jaguar,S-Type,2007,Yellow,19145
+288,2021-04-16,Davis-Hickle,Plymouth,Colt Vista,1993,Purple,66418
+289,2019-01-07,Kuhic-Quitzon,Mazda,Mazda3,2009,Mauv,17241
+290,2019-11-06,"Crooks, Reinger and Lehner",Honda,CR-V,2009,Khaki,56120
+291,2022-12-10,"Corwin, Kassulke and Smith",Pontiac,Sunfire,1995,Orange,65853
+292,2018-09-27,McGlynn-Feest,Toyota,Land Cruiser,1993,Indigo,12298
+293,2018-05-23,"Murphy, Beier and Heller",Mitsubishi,Mirage,1989,Khaki,37733
+294,2021-06-16,Roob-Kreiger,Honda,Accord,2012,Maroon,55529
+295,2021-06-12,Mann and Sons,Eagle,Talon,1995,Red,20110
+296,2020-10-04,"Nienow, Orn and Langosh",Chevrolet,Tahoe,2011,Khaki,19523
+297,2020-11-15,"Stiedemann, Hilll and Kutch",Mercedes-Benz,R-Class,2007,Mauv,96972
+298,2020-03-21,"Hane, Wehner and Lesch",Ferrari,599 GTB Fiorano,2009,Pink,89370
+299,2021-08-23,"Crooks, Baumbach and Kuhlman",Hyundai,Elantra,2012,Turquoise,13751
+300,2019-09-25,"Bauch, Collier and Gusikowski",Audi,80,1989,Khaki,99999
+301,2018-01-08,Luettgen LLC,Toyota,T100,1993,Pink,32181
+302,2021-04-15,Kunze and Sons,Ford,E150,2005,Puce,90505
+303,2020-03-28,Hauck-Zemlak,Porsche,924,1988,Crimson,40244
+304,2019-07-23,Schmeler Inc,Chevrolet,Camaro,2010,Pink,13314
+305,2019-01-27,"Block, Kuhlman and Hills",Toyota,Camry,2000,Goldenrod,54513
+306,2020-11-14,Bauch-Cassin,Hyundai,Sonata,1997,Khaki,34339
+307,2021-11-02,Runolfsson Group,Ford,Ranger,2011,Orange,35975
+308,2020-03-08,Erdman Inc,Toyota,Camry,1995,Teal,63200
+309,2018-01-03,"Stoltenberg, Adams and Wilderman",Mercury,Mystique,1996,Goldenrod,21529
+310,2022-12-10,"Mayer, Pouros and Heller",Isuzu,Ascender,2005,Blue,89736
+311,2019-01-26,"Monahan, Ratke and Vandervort",Nissan,Xterra,2007,Teal,87753
+312,2022-02-03,Bernhard-Schiller,Oldsmobile,Ciera,1993,Goldenrod,94773
+313,2020-12-23,"Schiller, Schaden and Murphy",GMC,Yukon XL 1500,2010,Blue,55885
+314,2021-10-19,"Jacobi, Botsford and Grimes",Toyota,Solara,2005,Violet,99785
+315,2021-05-02,"Halvorson, Kuvalis and Reichel",Ford,Escort,2001,Yellow,72040
+316,2019-11-29,Greenholt LLC,Ford,F150,2010,Green,99768
+317,2020-03-21,Funk LLC,GMC,Yukon,2007,Maroon,61645
+318,2022-09-21,Kshlerin-Crona,Mercedes-Benz,400SEL,1993,Violet,29864
+319,2020-08-16,Gerhold and Sons,Chevrolet,Camaro,1999,Violet,84703
+320,2021-05-24,Strosin-Price,Jeep,Commander,2006,Khaki,63882
+321,2023-01-19,Hagenes-Fritsch,Volvo,940,1995,Fuscia,96605
+322,2018-08-07,Gusikowski-Beer,Hyundai,Genesis,2011,Red,62393
+323,2019-09-06,Osinski and Sons,Maserati,Quattroporte,2010,Goldenrod,70275
+324,2018-10-28,Bernhard and Sons,BMW,330,2005,Purple,39172
+325,2019-03-19,"Bosco, Boyle and Cummerata",Pontiac,Grand Prix,1977,Turquoise,32225
+326,2019-10-30,Oberbrunner-Satterfield,Chevrolet,G-Series 3500,1997,Aquamarine,58765
+327,2020-01-25,Schuster-Schimmel,Mercury,Cougar,1996,Pink,63929
+328,2021-12-04,Armstrong Group,Land Rover,Range Rover,2011,Aquamarine,18264
+329,2018-09-17,Crooks and Sons,Ford,Explorer,2013,Turquoise,25805
+330,2022-09-19,Grimes-Adams,Dodge,Caravan,1992,Green,80984
+331,2018-02-19,"Cormier, O'Conner and Trantow",Pontiac,Solstice,2007,Pink,89048
+332,2018-12-07,Hills-Reynolds,Ford,Laser,1985,Aquamarine,95245
+333,2019-11-08,"Hyatt, Purdy and Muller",Ford,ZX2,2003,Purple,11301
+334,2020-10-23,Beatty Inc,Toyota,Echo,2002,Yellow,36739
+335,2020-03-23,"Reichel, Howell and Hilll",Nissan,370Z,2009,Maroon,54157
+336,2019-11-25,Jakubowski-Fay,Oldsmobile,Ciera,1993,Violet,30939
+337,2021-12-01,Jenkins LLC,Plymouth,Grand Voyager,1999,Aquamarine,97965
+338,2022-03-10,"Roberts, Marks and Sawayn",Ford,E-Series,1991,Puce,50771
+339,2021-03-25,Goldner-Dooley,Chevrolet,S10 Blazer,1993,Orange,63506
+340,2020-04-24,Stark LLC,Maserati,GranTurismo,2009,Goldenrod,91196
+341,2018-05-11,Ziemann and Sons,Pontiac,Grand Am,2004,Green,83660
+342,2019-06-19,Cartwright-Gulgowski,Nissan,300ZX,1995,Indigo,91259
+343,2018-07-18,Johnson-Sauer,Mitsubishi,Galant,1985,Orange,90942
+344,2019-01-06,"Reynolds, Rath and Legros",Chevrolet,Sportvan G30,1992,Mauv,78624
+345,2022-06-01,"Stehr, Rolfson and Vandervort",Bentley,Mulsanne,2011,Aquamarine,82949
+346,2019-10-27,Torphy-Deckow,Ford,Aerostar,1988,Orange,22417
+347,2018-05-29,Gorczany-Rath,Infiniti,G,2012,Pink,89435
+348,2022-05-20,Smitham Inc,Kia,Rio,2007,Puce,34725
+349,2019-01-22,Reichel Inc,Porsche,911,1997,Fuscia,90374
+350,2020-07-24,Moen Inc,Mitsubishi,Space,1984,Khaki,36229
+351,2020-01-25,"Brekke, Fay and Aufderhar",Audi,A8,2002,Blue,22778
+352,2020-11-22,McDermott-Champlin,Jeep,Wrangler,1998,Red,18005
+353,2020-06-06,"Cremin, Satterfield and Harber",Maybach,62,2010,Mauv,81006
+354,2021-09-10,Mills-Ondricka,Chevrolet,Corvette,1973,Pink,28319
+355,2020-02-04,Jakubowski-Swift,Buick,Riviera,1991,Violet,40298
+356,2018-01-19,"O'Connell, Hills and Jakubowski",Dodge,Ram 1500,1999,Teal,23768
+357,2021-12-10,Wolf Group,Toyota,Tercel,1994,Aquamarine,47322
+358,2019-08-08,Thiel-Jaskolski,Nissan,Pathfinder,2010,Fuscia,13702
+359,2022-05-19,West-Shields,Lamborghini,Murciélago,2003,Pink,95556
+360,2020-09-03,Hoppe LLC,Land Rover,Freelander,2005,Puce,93397
+361,2020-11-28,Quitzon-Ledner,Chevrolet,Blazer,2004,Puce,86457
+362,2022-08-04,King Group,Subaru,Outback,2001,Pink,18660
+363,2022-05-21,Spencer Inc,Dodge,Ram 2500,1995,Turquoise,82883
+364,2023-01-03,Deckow-Adams,Honda,Prelude,1984,Goldenrod,86726
+365,2020-06-28,Hilpert-Johnson,GMC,Envoy XUV,2004,Blue,58163
+366,2021-04-02,"Hettinger, Schmeler and Pfeffer",Alfa Romeo,164,1992,Aquamarine,61168
+367,2021-08-17,"Beier, O'Reilly and Hahn",Dodge,Durango,2009,Orange,89359
+368,2023-01-16,Hermann-Carter,Volkswagen,Jetta,1989,Aquamarine,58614
+369,2018-05-13,Windler-Zemlak,Chrysler,LHS,2000,Indigo,72908
+370,2020-04-17,"Langosh, Dare and Rempel",GMC,Suburban 2500,1992,Red,51579
+371,2020-06-27,"Fisher, Windler and Mante",Oldsmobile,Aurora,1999,Orange,13563
+372,2018-07-09,Lakin-Bernier,Volkswagen,Passat,1994,Maroon,72162
+373,2018-10-13,Tillman-Schaefer,Subaru,Tribeca,2010,Red,90883
+374,2022-08-12,Cassin and Sons,Ford,Taurus,1996,Red,23229
+375,2019-05-11,Kunze-Kerluke,Buick,Rendezvous,2004,Blue,63434
+376,2020-04-18,"Blanda, Moen and Mayer",Isuzu,Rodeo,2002,Goldenrod,23159
+377,2021-10-24,Leannon-O'Keefe,Pontiac,Bonneville,1995,Blue,20223
+378,2021-07-03,"Hegmann, Cartwright and Spencer",Dodge,Ram 50,1992,Pink,94641
+379,2021-01-24,"Aufderhar, Rau and Rath",Saab,9-5,2008,Purple,43663
+380,2018-12-25,Nolan and Sons,GMC,Savana Cargo Van,2006,Crimson,67010
+381,2020-05-26,Pouros LLC,Chevrolet,1500,1993,Green,41704
+382,2022-05-26,Gulgowski-VonRueden,Dodge,Viper,2010,Indigo,23085
+383,2020-04-21,"Gibson, Hagenes and Stroman",Buick,Regal,1994,Red,11461
+384,2023-02-11,King Inc,Porsche,Cayman,2011,Khaki,64262
+385,2020-01-10,Johnson-Ferry,BMW,X5,2008,Green,70723
+386,2018-06-12,Hayes LLC,Subaru,Outback,2009,Maroon,75432
+387,2021-07-24,Nolan and Sons,Chevrolet,Caprice Classic,1994,Pink,57808
+388,2021-02-09,"Flatley, Kohler and Brakus",Ford,F150,1999,Puce,20943
+389,2018-07-08,Krajcik-Rau,Mercedes-Benz,S-Class,1988,Aquamarine,72652
+390,2023-04-19,Herman and Sons,Dodge,Monaco,1992,Maroon,34041
+391,2021-08-26,"Hegmann, Koepp and Boyer",Ford,Explorer Sport,2002,Mauv,11068
+392,2020-08-26,Harvey-Walsh,Audi,Allroad,2001,Goldenrod,50253
+393,2021-06-29,"Franecki, Ryan and Hegmann",Honda,S2000,2006,Teal,92781
+394,2022-02-10,"Ortiz, Kihn and Sanford",Acura,MDX,2005,Red,71671
+395,2022-06-08,Hyatt-Stehr,Volkswagen,Jetta,1999,Violet,53673
+396,2023-04-25,Jenkins-Yost,Mitsubishi,Montero,2004,Crimson,26882
+397,2022-09-22,Marks LLC,Mitsubishi,Diamante,1992,Orange,24728
+398,2022-05-06,Sipes-Champlin,Subaru,Legacy,2012,Pink,56458
+399,2021-11-23,Stiedemann Inc,Honda,S2000,2009,Indigo,54642
+400,2023-04-12,"Quitzon, Cruickshank and Koepp",Saab,9-3,2003,Red,52623
+401,2018-05-18,"Nader, Koch and Murazik",Mazda,CX-9,2008,Pink,21216
+402,2019-01-30,Doyle Group,Jaguar,XK Series,2000,Blue,84704
+403,2021-04-27,Greenholt-Thiel,Nissan,Sentra,2002,Purple,43078
+404,2020-01-23,Bogan-Fay,Ford,Tempo,1989,Indigo,97201
+405,2022-05-15,"Lind, Flatley and Hodkiewicz",BMW,M6,2010,Crimson,98960
+406,2020-06-02,"Kuphal, Lindgren and Beatty",Ford,Mustang,1988,Crimson,96378
+407,2021-04-25,"Mayer, Bernhard and Kutch",Acura,RDX,2008,Khaki,92784
+408,2019-01-18,Hand-Feeney,GMC,Yukon,1994,Turquoise,10902
+409,2020-01-14,"O'Reilly, Ferry and Durgan",Mitsubishi,Mighty Max,1995,Teal,70855
+410,2021-08-15,Reilly and Sons,Ford,Econoline E350,1996,Crimson,55309
+411,2020-04-25,Bergstrom and Sons,Mercedes-Benz,SL-Class,2002,Indigo,58179
+412,2019-02-25,Shanahan LLC,Volkswagen,GTI,2011,Maroon,12272
+413,2018-04-02,Cummings Inc,Mercedes-Benz,SLS-Class,2012,Maroon,48590
+414,2018-10-25,Harris Group,Chevrolet,G-Series 1500,1997,Teal,59740
+415,2019-03-05,"Herman, Kunde and Windler",Honda,Pilot,2002,Violet,58764
+416,2021-07-27,Harvey Inc,Acura,Integra,1988,Puce,70915
+417,2018-11-11,Senger-Gleason,Ford,Taurus,2002,Blue,91305
+418,2019-12-04,"Larson, Prohaska and Christiansen",Volvo,XC70,2007,Aquamarine,36035
+419,2020-05-30,"Schaden, Romaguera and Powlowski",Pontiac,Bonneville,2003,Purple,93335
+420,2023-01-17,Bailey LLC,Audi,A6,2002,Violet,72508
+421,2019-11-30,Smitham LLC,Chrysler,Cirrus,1999,Indigo,98253
+422,2021-05-18,Denesik-Kirlin,Suzuki,Equator,2011,Orange,37981
+423,2018-07-05,"Parisian, Yundt and McCullough",Dodge,Ramcharger,1993,Red,16985
+424,2019-02-03,Moore-Lebsack,Pontiac,G6,2006,Turquoise,93562
+425,2021-05-25,Lebsack Inc,Ford,F450,2010,Fuscia,31998
+426,2020-09-01,Friesen-Fritsch,GMC,Sierra 1500,2006,Yellow,33952
+427,2019-03-14,"West, Shields and Bergstrom",Ford,F150,2002,Aquamarine,64813
+428,2022-07-25,"Hoeger, Jones and Abshire",Subaru,B9 Tribeca,2007,Mauv,43282
+429,2018-02-20,Yundt-Windler,Acura,NSX,2003,Violet,71064
+430,2019-10-08,"Runte, Hermann and Mayert",Toyota,Tundra,2008,Puce,33088
+431,2020-07-24,Nolan-Muller,Toyota,RAV4,2005,Aquamarine,31183
+432,2022-12-12,Prosacco-Kilback,Toyota,Camry,2011,Green,94615
+433,2019-04-10,Sauer and Sons,Ford,Mustang,1988,Blue,89958
+434,2018-04-04,Purdy-Cremin,Acura,RL,2001,Goldenrod,79784
+435,2022-08-27,"Connelly, Larson and Ferry",Ford,F350,2004,Crimson,10564
+436,2019-11-17,Strosin and Sons,Volkswagen,Passat,1999,Purple,36243
+437,2020-08-05,Considine-Anderson,Chevrolet,Malibu,1999,Fuscia,81801
+438,2022-12-28,Ritchie and Sons,Chevrolet,Express 1500,2004,Aquamarine,13989
+439,2018-11-16,"Okuneva, Hermiston and Murazik",GMC,1500 Club Coupe,1992,Maroon,86680
+440,2018-07-28,Schroeder and Sons,Dodge,Ramcharger,1992,Aquamarine,23958
+441,2021-07-30,"Bernhard, Watsica and Heathcote",Ford,F250,1995,Yellow,66404
+442,2019-09-25,Sauer-Smith,Mazda,Navajo,1991,Aquamarine,49503
+443,2021-11-18,Shanahan-Grimes,GMC,Yukon,1994,Purple,40344
+444,2020-04-08,Barton-Shanahan,Mercury,Cougar,1990,Green,25797
+445,2018-01-01,O'Hara LLC,Buick,Skylark,1993,Aquamarine,50392
+446,2020-10-18,Bartoletti LLC,Chevrolet,Monte Carlo,1997,Teal,44069
+447,2018-12-05,"Kihn, Frami and Dare",Dodge,Ram 2500,2004,Purple,99871
+448,2022-06-22,Keeling Inc,Toyota,Yaris,2010,Puce,59906
+449,2019-07-31,Kris Group,Honda,Odyssey,2007,Fuscia,75584
+450,2021-07-21,"Runolfsson, Wisoky and Ondricka",BMW,M5,2003,Pink,23375
+451,2022-07-07,Jast and Sons,Volvo,S40,2004,Violet,67186
+452,2020-01-06,"Kshlerin, Champlin and Bartoletti",GMC,Envoy XL,2003,Goldenrod,66405
+453,2020-05-07,"Stoltenberg, Mills and Stanton",Ford,Tempo,1986,Pink,30733
+454,2023-04-20,"Hamill, Hackett and Nikolaus",Pontiac,Trans Sport,1994,Turquoise,88400
+455,2021-05-20,Mills-Flatley,Chevrolet,Monte Carlo,1998,Turquoise,41872
+456,2018-03-04,"Rogahn, Hermann and Torp",Lexus,GS,2006,Orange,64702
+457,2020-12-17,Larkin-O'Reilly,Subaru,Forester,2005,Puce,75322
+458,2020-08-17,Mraz-Ortiz,Acura,MDX,2006,Goldenrod,95991
+459,2019-04-17,Dare and Sons,Saab,9000,1989,Turquoise,60836
+460,2019-07-25,Toy-Gusikowski,Mitsubishi,Lancer,2004,Red,47949
+461,2018-07-24,"Konopelski, Spinka and Steuber",Ford,Thunderbird,1994,Pink,17971
+462,2022-10-08,"Shields, Nienow and Bahringer",Chevrolet,Avalanche 2500,2006,Goldenrod,97766
+463,2023-03-29,Braun-Hammes,Honda,Insight,2012,Violet,71550
+464,2022-11-11,"Wyman, Lang and Kutch",Maserati,Karif,1989,Maroon,86218
+465,2019-04-19,"Strosin, Halvorson and Koelpin",Nissan,Cube,2012,Pink,44233
+466,2022-07-15,Robel Inc,Hyundai,Accent,2010,Maroon,99144
+467,2021-09-21,Klein Group,GMC,Sierra 1500,2005,Red,63119
+468,2023-04-22,"Durgan, Zemlak and Sipes",Mercedes-Benz,S-Class,1992,Violet,37047
+469,2022-12-14,"Parker, Marks and Wunsch",Chevrolet,Silverado 2500,2008,Khaki,87014
+470,2020-02-13,Keebler LLC,Volvo,XC90,2008,Blue,89346
+471,2020-06-29,"Bechtelar, Mills and Senger",Mitsubishi,Challenger,2004,Violet,77332
+472,2019-01-03,Padberg-Nolan,Volkswagen,Eos,2007,Purple,97891
+473,2021-08-13,Koch and Sons,Lexus,SC,2002,Blue,67572
+474,2023-04-15,Bailey Group,Volkswagen,Passat,1998,Fuscia,26535
+475,2020-04-19,Konopelski-Klein,Honda,Element,2005,Maroon,44431
+476,2019-08-06,Nikolaus and Sons,Chevrolet,Express 1500,2004,Purple,45565
+477,2022-09-03,Berge LLC,Cadillac,Escalade,2006,Crimson,91250
+478,2019-02-07,Goodwin-Harvey,Maserati,Quattroporte,2012,Red,39505
+479,2020-05-27,Wisozk LLC,Honda,Prelude,1994,Indigo,20522
+480,2020-06-04,Marks-Gibson,Lincoln,MKX,2012,Yellow,25504
+481,2021-08-09,"Emmerich, Kohler and Koelpin",Toyota,Tercel,1996,Teal,21561
+482,2018-05-06,Daugherty-Sipes,Chevrolet,Camaro,1972,Violet,58920
+483,2018-05-09,"Gislason, Jenkins and Sawayn",Jaguar,XK Series,2003,Puce,32248
+484,2022-03-01,Cassin-Mitchell,Mercedes-Benz,600SEL,1993,Purple,68061
+485,2019-08-28,Stokes-Borer,Mercury,Tracer,1996,Maroon,61471
+486,2021-06-28,Bechtelar Inc,Aston Martin,DBS,2011,Teal,84473
+487,2021-04-16,Pfannerstill and Sons,BMW,7 Series,2003,Maroon,27137
+488,2021-10-23,Hoppe-Klocko,Oldsmobile,Achieva,1992,Fuscia,22244
+489,2020-09-10,Stokes Inc,Audi,Cabriolet,1995,Crimson,80072
+490,2019-11-26,Spencer-Will,Ford,Thunderbird,1995,Turquoise,39446
+491,2018-06-19,Kihn and Sons,Porsche,Cayenne,2011,Blue,93106
+492,2019-04-28,Johns and Sons,Jaguar,X-Type,2008,Yellow,41053
+493,2022-04-24,Reichel-Abshire,Lexus,ES,1998,Indigo,55347
+494,2020-02-12,"Morissette, Willms and Jacobi",Mercury,Montego,2005,Aquamarine,60589
+495,2018-02-12,Greenfelder-Schamberger,Ford,Mustang,2012,Aquamarine,97371
+496,2018-09-19,Schamberger and Sons,Nissan,350Z,2005,Puce,33332
+497,2022-02-09,Stracke Group,Volvo,S70,1998,Puce,70882
+498,2023-02-07,"Marquardt, O'Conner and Fay",Mercury,Mountaineer,2004,Green,78882
+499,2018-06-24,Armstrong Group,Toyota,FJ Cruiser,2011,Green,45073
+500,2019-05-23,"Gerhold, Fay and Roberts",Volkswagen,Jetta,1995,Aquamarine,80848
+501,2021-07-25,Terry-Ullrich,Ford,Mustang,2002,Turquoise,14112
+502,2021-12-13,"Schaden, Ledner and Runolfsdottir",Mercury,Lynx,1984,Indigo,14208
+503,2022-01-01,Pagac-McKenzie,Pontiac,Grand Prix,1980,Mauv,28160
+504,2021-07-18,Hintz-Graham,Buick,Somerset,1985,Goldenrod,42398
+505,2019-06-11,"Balistreri, Ritchie and Zieme",Mercedes-Benz,G-Class,2007,Blue,46977
+506,2022-03-13,Prosacco and Sons,GMC,Yukon XL 2500,2009,Indigo,70096
+507,2020-05-16,"Johnston, Feil and Schiller",Pontiac,Chevette,1987,Maroon,37619
+508,2020-08-26,Kreiger-Friesen,Mazda,Miata MX-5,2000,Khaki,90447
+509,2022-08-30,Heathcote-Moore,Mercedes-Benz,M-Class,2000,Puce,71596
+510,2019-03-06,"Bechtelar, Anderson and Reichert",Hyundai,Azera,2008,Turquoise,63069
+511,2019-12-13,Wyman Inc,Infiniti,FX,2003,Khaki,99633
+512,2021-03-27,Pfeffer Inc,Eagle,Talon,1993,Crimson,70406
+513,2018-04-13,Mayer-Willms,Mitsubishi,Galant,2011,Teal,88385
+514,2020-04-19,"Bartell, Kris and McCullough",Chevrolet,G-Series 1500,1997,Turquoise,61747
+515,2021-07-20,Langworth-Turcotte,Pontiac,Grand Prix,1994,Turquoise,86598
+516,2023-04-23,"Wiegand, Grady and Blick",Ford,Bronco,1984,Fuscia,43629
+517,2019-12-22,"Harvey, Quitzon and Graham",Mitsubishi,Galant,1999,Goldenrod,78531
+518,2020-01-10,Crona-Wunsch,Buick,Rainier,2006,Puce,71420
+519,2020-02-04,Schowalter LLC,Lincoln,Continental,1994,Fuscia,58189
+520,2022-05-18,"Jerde, Murazik and Powlowski",Chrysler,Imperial,1992,Green,11875
+521,2020-08-12,"Gorczany, Mitchell and Douglas",Mercedes-Benz,SLK-Class,2003,Pink,13149
+522,2020-10-06,Herzog-Schinner,Lexus,LS,2008,Khaki,64498
+523,2022-02-20,Prohaska-Wiegand,Dodge,Neon,1995,Blue,25608
+524,2020-03-11,"Hayes, Ebert and Dare",Mitsubishi,L300,1989,Yellow,78395
+525,2020-02-07,O'Reilly Inc,BMW,X5 M,2010,Pink,92601
+526,2020-06-08,Bogan LLC,Mercedes-Benz,500SL,1993,Khaki,49019
+527,2018-07-21,"Bernhard, Corkery and Krajcik",GMC,Savana 2500,2012,Puce,70658
+528,2022-03-10,Hegmann-Nolan,Ford,Freestar,2007,Green,97189
+529,2021-08-23,Pfannerstill-Torp,MINI,Clubman,2012,Pink,55694
+530,2021-09-18,Wisozk-Breitenberg,Eagle,Vision,1993,Aquamarine,36507
+531,2020-07-22,"McKenzie, Herzog and Kerluke",Lotus,Elan,1994,Indigo,71181
+532,2019-08-17,"Fadel, Wintheiser and Kozey",Lincoln,Continental,1996,Orange,88325
+533,2022-07-10,Dach Inc,Lexus,ES,1994,Khaki,19170
+534,2019-08-02,Dietrich Inc,Ford,Bronco,1992,Purple,58772
+535,2019-12-28,Heathcote LLC,Scion,xB,2006,Violet,52919
+536,2019-01-10,Bergstrom-Padberg,GMC,Savana 1500,2003,Blue,31395
+537,2019-01-07,"Buckridge, Swaniawski and Hand",Mercedes-Benz,190E,1992,Fuscia,85226
+538,2019-08-16,Rau-Carter,Oldsmobile,Alero,2004,Indigo,59504
+539,2018-05-26,Fay and Sons,Mercury,Grand Marquis,2003,Fuscia,81689
+540,2018-01-26,"Ryan, Lockman and Yundt",Ford,Expedition,1998,Orange,82014
+541,2019-07-17,Langosh Group,Dodge,Grand Caravan,2006,Khaki,10888
+542,2022-09-05,Hodkiewicz and Sons,Chevrolet,G-Series G30,1992,Mauv,38160
+543,2019-01-08,Monahan-Zemlak,BMW,M3,2002,Mauv,72672
+544,2018-01-22,"Ward, Quitzon and Nolan",Nissan,370Z,2011,Khaki,85453
+545,2019-03-14,Herman-Walker,Mazda,MPV,2006,Khaki,26374
+546,2018-09-27,"Grimes, Pfeffer and Witting",Scion,xB,2006,Blue,70790
+547,2021-07-03,Ankunding LLC,Chevrolet,G-Series G10,1992,Red,11026
+548,2019-11-06,Beer LLC,Chevrolet,Express 1500,2006,Purple,13577
+549,2022-12-03,Lang LLC,Toyota,Land Cruiser,2007,Pink,29126
+550,2018-01-25,"Hessel, Wehner and Kirlin",Mercedes-Benz,CL-Class,1999,Green,37398
+551,2022-09-30,"Feest, Walker and Robel",Lamborghini,Murciélago,2002,Pink,70071
+552,2023-04-16,"Goodwin, Hackett and Bechtelar",Mazda,B-Series,2001,Violet,76382
+553,2022-02-23,"Morissette, Kris and Bednar",Ford,LTD Crown Victoria,1990,Green,33024
+554,2022-06-02,Hilpert Inc,Hummer,H1,2006,Violet,89963
+555,2022-02-01,Haley-Kassulke,Dodge,Ram 2500 Club,1999,Pink,18975
+556,2020-01-10,Ryan LLC,Jeep,Cherokee,1995,Violet,45488
+557,2018-08-09,Hilll Group,Acura,Integra,1995,Red,34080
+558,2020-05-22,Weimann-Marvin,Lexus,RX,2003,Crimson,34783
+559,2023-04-05,"Hermiston, King and Dibbert",Buick,Skylark,1997,Aquamarine,31746
+560,2018-06-20,Miller and Sons,Audi,A4,2003,Blue,70597
+561,2020-12-04,Simonis Group,Acura,TSX,2009,Red,39178
+562,2023-01-25,"Bednar, Hintz and O'Hara",Acura,Legend,1992,Purple,64088
+563,2023-03-12,Kutch Inc,Lincoln,Continental,1987,Mauv,72874
+564,2019-08-30,"Schuppe, Leuschke and Lueilwitz",Saab,9-5,2004,Puce,29356
+565,2020-07-12,Wolff-White,Toyota,Sequoia,2008,Khaki,73590
+566,2023-01-14,"Schuppe, O'Hara and Zboncak",Cadillac,CTS,2010,Puce,39351
+567,2020-06-18,Padberg-Pollich,Acura,Vigor,1992,Crimson,83407
+568,2022-10-27,"Rolfson, Hand and Leffler",Ford,Excursion,2005,Maroon,71219
+569,2021-10-11,Braun LLC,Audi,200,1989,Puce,59998
+570,2019-07-25,Hermann-Vandervort,Audi,A4,2005,Green,42066
+571,2018-05-03,Brekke and Sons,Mitsubishi,Truck,1990,Teal,23983
+572,2021-07-05,"Donnelly, Oberbrunner and Langworth",Buick,LaCrosse,2010,Aquamarine,14179
+573,2022-11-26,Botsford LLC,Ford,E-350 Super Duty,2006,Puce,87866
+574,2022-12-13,Grant-Klocko,Chevrolet,Express 3500,2001,Maroon,19687
+575,2020-04-08,"Weimann, Bradtke and Kassulke",Lincoln,Navigator,2007,Blue,44528
+576,2020-07-23,Kreiger Group,Lincoln,Continental,1986,Green,98851
+577,2021-04-03,"Deckow, Hilll and Conn",Pontiac,Grand Am,1994,Orange,62163
+578,2022-01-30,Rutherford-Purdy,Buick,Century,1995,Puce,74518
+579,2018-04-14,Cremin Group,Dodge,Ram,2003,Yellow,33132
+580,2021-05-22,"Mills, Jones and Cartwright",Audi,Q7,2007,Violet,13566
+581,2019-11-21,VonRueden LLC,Ford,Mustang,2012,Red,23821
+582,2021-09-22,"Kuhn, Leannon and Sawayn",Volkswagen,Eurovan,2000,Yellow,83268
+583,2018-10-16,Rohan Group,Mercury,Sable,1989,Teal,29853
+584,2019-03-06,Rath-Koelpin,Nissan,Titan,2005,Orange,94637
+585,2020-02-28,Kunze-Hartmann,Buick,Skylark,1988,Yellow,47409
+586,2021-02-05,"Orn, Abernathy and Carter",Nissan,Frontier,1999,Yellow,58994
+587,2023-02-26,"Oberbrunner, Farrell and Leffler",Chevrolet,Impala,2005,Red,61734
+588,2019-10-14,Christiansen Group,Pontiac,Bonneville,1998,Goldenrod,59659
+589,2021-03-26,Dibbert-Baumbach,Volvo,960,1996,Aquamarine,66377
+590,2022-01-17,Halvorson Group,Toyota,T100,1997,Green,78125
+591,2019-04-12,Marks Group,Land Rover,Range Rover,1992,Maroon,25614
+592,2018-05-28,Rogahn Group,Lincoln,Mark VIII,1996,Purple,51537
+593,2021-02-09,Nikolaus Inc,Volkswagen,Corrado,1991,Green,20070
+594,2021-06-22,Schuppe-Johns,Hyundai,Sonata,2013,Red,60697
+595,2018-07-10,"Auer, Carter and Ziemann",Mazda,Familia,1991,Puce,33382
+596,2020-11-13,Lakin and Sons,Mercedes-Benz,E-Class,2004,Indigo,59557
+597,2022-04-03,"Ritchie, Gleichner and Wiza",Isuzu,Rodeo Sport,2001,Pink,63937
+598,2020-02-11,"Lesch, Tillman and Roberts",Kia,Mohave/Borrego,2009,Violet,90714
+599,2019-08-04,Wiegand Inc,Mazda,Mazda6,2009,Aquamarine,41457
+600,2018-04-16,Hartmann-Schuster,Buick,Lucerne,2011,Maroon,49936
+601,2023-01-10,Macejkovic-Schmeler,Ford,Freestyle,2005,Orange,85399
+602,2020-11-20,Torphy-Christiansen,Mitsubishi,Lancer Evolution,2003,Blue,18364
+603,2021-02-26,"Bergstrom, Blick and Ruecker",Chevrolet,G-Series 3500,1998,Turquoise,12345
+604,2020-12-16,King Group,Mitsubishi,Challenger,1997,Pink,38926
+605,2019-01-28,Bins-Jacobs,Mazda,B-Series,1989,Aquamarine,69234
+606,2020-03-31,Boyer-Beier,Ford,Thunderbird,1993,Red,60637
+607,2021-10-04,"Funk, Ruecker and Schowalter",Toyota,Avalon,2004,Mauv,19656
+608,2022-02-28,"Maggio, Jakubowski and Stark",Chevrolet,Express 1500,2004,Blue,95336
+609,2023-03-16,Kertzmann Group,Lexus,LX,2007,Crimson,16274
+610,2022-05-07,"Kozey, Walsh and Kris",Volkswagen,Jetta III,1995,Red,94307
+611,2023-02-03,Corkery LLC,Hyundai,Elantra,1995,Purple,34570
+612,2020-04-15,"McDermott, Johns and Emmerich",Dodge,Grand Caravan,1993,Green,13465
+613,2023-03-21,Roob Inc,Acura,NSX,1996,Fuscia,46828
+614,2019-08-22,"Grimes, Zulauf and Yost",Pontiac,Turbo Firefly,1988,Goldenrod,58877
+615,2020-07-10,Monahan-Jacobi,Pontiac,Grand Prix,1996,Violet,58452
+616,2022-04-24,Crist LLC,Mercedes-Benz,Sprinter 2500,2012,Violet,15476
+617,2022-01-15,Ledner LLC,Cadillac,Seville,2003,Maroon,91573
+618,2022-12-18,Sauer Group,Mercedes-Benz,E-Class,1997,Pink,83001
+619,2022-12-29,Gislason Inc,Dodge,Ram 3500,1997,Khaki,89541
+620,2021-01-11,"Herman, Schaden and Daugherty",Chevrolet,Silverado 1500,2003,Khaki,74275
+621,2019-11-01,Haley and Sons,Mazda,B-Series,1995,Orange,74401
+622,2019-01-13,Lesch LLC,Isuzu,Trooper,2000,Khaki,86427
+623,2020-11-23,Goldner-Dach,Plymouth,Neon,2000,Purple,71418
+624,2018-08-30,Ullrich-Jaskolski,Jeep,Grand Cherokee,2008,Turquoise,91158
+625,2020-10-22,"Gulgowski, Bogan and Roberts",Toyota,Corolla,1999,Violet,35238
+626,2020-12-19,"Thompson, Romaguera and Carter",Mercedes-Benz,SLR McLaren,2007,Green,57801
+627,2019-05-01,Orn Group,Subaru,Legacy,2000,Khaki,90344
+628,2018-10-30,"Feil, Farrell and Bashirian",Pontiac,Sunfire,1997,Khaki,80234
+629,2019-03-07,"Gottlieb, Schulist and Nikolaus",Toyota,MR2,2005,Teal,43106
+630,2019-03-24,Schiller and Sons,Ford,Explorer,1997,Orange,56953
+631,2018-03-21,"Cummings, Blanda and Romaguera",Plymouth,Prowler,1999,Purple,16648
+632,2018-04-11,Gusikowski and Sons,Plymouth,Breeze,1998,Blue,89354
+633,2018-10-31,"Swaniawski, Daugherty and Runolfsdottir",Chevrolet,Aveo,2011,Crimson,64884
+634,2020-10-26,"Stoltenberg, Deckow and Metz",GMC,Vandura 2500,1993,Maroon,73974
+635,2021-07-28,Powlowski-Douglas,Buick,Park Avenue,2004,Maroon,38088
+636,2019-10-01,"Keebler, Steuber and Jerde",Mitsubishi,Montero,2003,Red,54710
+637,2022-02-27,"Orn, Bartell and Cremin",Pontiac,Sunfire,1997,Pink,83939
+638,2021-01-06,Maggio-Zboncak,Chrysler,PT Cruiser,2008,Puce,46309
+639,2019-10-09,"Pfannerstill, Maggio and Nader",Nissan,Armada,2008,Goldenrod,96106
+640,2020-10-04,"Stiedemann, Lind and Romaguera",Dodge,Aries,1981,Pink,51553
+641,2022-03-28,Williamson-Wyman,Buick,Reatta,1991,Green,19480
+642,2021-01-20,Wisoky Inc,MG,MGB,1977,Aquamarine,21196
+643,2020-08-18,"Wintheiser, Marvin and Bashirian",Chevrolet,Camaro,1981,Puce,25716
+644,2021-09-08,Skiles Inc,Audi,riolet,1996,Green,96130
+645,2020-12-24,Herzog Group,Ford,F150,1995,Pink,42225
+646,2019-09-14,"Robel, Marquardt and Robel",Nissan,Titan,2011,Purple,32038
+647,2021-06-20,Wilkinson-O'Kon,Mercedes-Benz,190E,1992,Aquamarine,47739
+648,2021-03-21,"Sauer, Yost and West",GMC,Savana 2500,2002,Indigo,23784
+649,2019-11-16,"Daniel, Blick and Baumbach",Mazda,B-Series Plus,1993,Purple,75549
+650,2019-05-01,Hyatt-Robel,Volvo,850,1997,Pink,66012
+651,2020-09-15,Jones LLC,GMC,Sierra 2500,2005,Pink,61163
+652,2022-11-12,Olson Group,BMW,1 Series,2011,Yellow,37719
+653,2020-11-29,"Blick, Morissette and Wunsch",Jeep,Commander,2008,Purple,81565
+654,2018-06-25,Harris-McDermott,Mercedes-Benz,SLR McLaren,2009,Purple,56994
+655,2020-02-06,Blanda Inc,Volkswagen,Eos,2008,Blue,95722
+656,2018-12-15,"Rolfson, Ward and Corwin",Chevrolet,Malibu,2011,Mauv,55728
+657,2018-05-23,Batz-Hartmann,Chevrolet,Corvette,2012,Indigo,26776
+658,2018-08-26,Paucek-Oberbrunner,Land Rover,LR4,2010,Green,64251
+659,2018-10-23,"Fay, Lang and Spencer",Dodge,Ram 2500,2007,Crimson,38582
+660,2022-04-28,Hills and Sons,Mercedes-Benz,SLR McLaren,2009,Khaki,94236
+661,2019-10-06,Rath-Mraz,Pontiac,GTO,1966,Teal,18804
+662,2022-08-18,"Trantow, Wisozk and Gulgowski",Honda,Passport,2002,Fuscia,30407
+663,2021-12-01,"Spencer, McClure and Doyle",Pontiac,Grand Am,1988,Turquoise,70385
+664,2018-10-10,"Beahan, Spencer and Funk",Bentley,Continental Super,2010,Goldenrod,42819
+665,2019-12-13,"Kuvalis, Schuppe and Christiansen",GMC,Vandura 3500,1992,Mauv,48897
+666,2023-05-06,Stiedemann LLC,Chevrolet,Astro,1992,Violet,88057
+667,2021-07-09,"Cummerata, Rodriguez and Powlowski",Lexus,LX,2006,Pink,17225
+668,2020-10-04,"Orn, Denesik and White",Pontiac,Grand Prix,1963,Orange,64773
+669,2021-05-04,Bernier LLC,Nissan,Xterra,2010,Puce,19096
+670,2021-10-03,Langworth and Sons,MINI,MINI,2002,Violet,33687
+671,2019-09-11,Rice-Auer,Hyundai,Tiburon,2008,Orange,96633
+672,2022-08-22,Leannon Inc,Ford,Tempo,1985,Goldenrod,61396
+673,2021-11-03,Mills-Schmeler,Porsche,911,1994,Pink,20077
+674,2020-06-28,Klein-Raynor,Mitsubishi,Chariot,1987,Red,17049
+675,2019-11-07,Moen-Reichel,Dodge,Neon,2003,Khaki,90101
+676,2020-11-03,"Larkin, Wiegand and O'Connell",Volkswagen,Type 2,1986,Mauv,39370
+677,2023-04-28,Reilly and Sons,Mercury,Cougar,1994,Red,31820
+678,2019-07-18,Bernhard LLC,Infiniti,QX,2001,Puce,55849
+679,2019-07-12,Mohr Inc,Honda,Civic,2000,Puce,18028
+680,2019-06-08,Gerlach-Price,Acura,SLX,1998,Puce,69676
+681,2022-03-24,Bailey-Littel,Chevrolet,Venture,1999,Purple,85347
+682,2019-07-16,Nolan-Borer,Mercury,Milan,2010,Purple,37747
+683,2018-12-25,"Kessler, Luettgen and Leannon",Cadillac,DeVille,1994,Orange,21504
+684,2020-03-04,Ernser Inc,BMW,1 Series,2011,Crimson,72636
+685,2020-01-12,Mayert LLC,Chrysler,LeBaron,1993,Green,80412
+686,2022-05-13,"O'Kon, Kerluke and Heathcote",Chevrolet,Express 2500,2000,Indigo,17045
+687,2019-09-30,Veum-Block,Audi,S4,2001,Turquoise,15308
+688,2021-10-02,Bernhard and Sons,Land Rover,Range Rover,2007,Crimson,66905
+689,2020-01-26,Kiehn-Mohr,Jaguar,XJ Series,1994,Fuscia,83756
+690,2021-10-02,Swaniawski Group,Subaru,Forester,1998,Orange,57500
+691,2023-02-11,Lindgren and Sons,GMC,3500 Club Coupe,1994,Fuscia,61415
+692,2023-03-08,"Schmeler, O'Keefe and Purdy",Acura,CL,2003,Puce,17784
+693,2022-09-07,"Schaden, Bergstrom and Bernier",Saturn,Aura,2008,Purple,42930
+694,2020-05-04,Larkin-Lesch,Geo,Prizm,1993,Orange,40802
+695,2019-01-28,"Collins, Streich and Rodriguez",Toyota,4Runner,1996,Indigo,27491
+696,2022-09-12,Dietrich Inc,Ford,Club Wagon,1995,Purple,77144
+697,2020-01-03,Bahringer LLC,Toyota,Celica,2001,Red,20586
+698,2022-09-21,Moen-Witting,Audi,A4,2002,Orange,66458
+699,2020-11-28,Dickinson Group,Lamborghini,Diablo,1992,Violet,89586
+700,2021-04-15,Daugherty Inc,GMC,Sierra 3500,2000,Maroon,16549
+701,2021-05-01,Paucek-Tillman,Chevrolet,Astro,2004,Aquamarine,80908
+702,2022-12-06,"Quitzon, Green and Schowalter",Chevrolet,Colorado,2007,Maroon,67077
+703,2018-05-24,Ritchie Group,Chevrolet,Silverado 3500,2010,Blue,56614
+704,2021-10-02,"Kutch, Nolan and Murazik",Nissan,300ZX,1992,Violet,63242
+705,2019-04-02,"Hand, Kertzmann and Considine",BMW,X3,2009,Indigo,95309
+706,2022-12-11,Cremin and Sons,BMW,M3,2012,Indigo,55410
+707,2021-02-28,Frami Group,Jensen,Interceptor,1966,Goldenrod,42001
+708,2020-02-03,"Jenkins, Kohler and Roob",GMC,3500 Club Coupe,1994,Goldenrod,47951
+709,2018-09-22,Walker-Hudson,Chevrolet,Suburban 2500,2010,Mauv,23909
+710,2021-09-02,"O'Hara, Williamson and Marquardt",Hummer,H1,2004,Blue,89812
+711,2019-02-14,Abernathy-Morar,Mitsubishi,Eclipse,2010,Goldenrod,96858
+712,2023-04-16,Oberbrunner-Labadie,Volkswagen,GTI,1988,Turquoise,65150
+713,2021-08-18,Keeling Group,Mercury,Marquis,1986,Teal,66391
+714,2022-02-09,Spinka Inc,Lexus,LS,2007,Khaki,10431
+715,2018-10-30,"Klein, Abernathy and Thiel",Chevrolet,G-Series 2500,1998,Red,72909
+716,2018-06-06,Lehner-Carter,Chrysler,Sebring,2000,Khaki,41679
+717,2020-03-22,Wilkinson-Crona,Ford,Th!nk,2002,Mauv,23886
+718,2020-11-30,"Hintz, Wintheiser and Greenholt",Audi,TT,2005,Mauv,28852
+719,2020-05-25,"D'Amore, Little and Grimes",Suzuki,Daewoo Lacetti,2006,Goldenrod,66952
+720,2021-04-19,Halvorson-Hegmann,Mercedes-Benz,C-Class,2006,Green,94973
+721,2021-09-07,Lang-Greenholt,Chrysler,Town & Country,2002,Maroon,95801
+722,2018-03-04,Larkin Inc,Mitsubishi,RVR,1993,Indigo,81444
+723,2022-12-14,Goyette-Lockman,Jaguar,XJ Series,1992,Yellow,31316
+724,2021-05-02,"Bahringer, Pfannerstill and Stracke",Buick,Rendezvous,2002,Indigo,68484
+725,2018-11-16,"Spinka, Weber and Harber",Mercury,Cougar,2000,Teal,30583
+726,2022-05-29,Abernathy-Pagac,Chevrolet,Silverado 2500,2007,Yellow,10274
+727,2022-09-27,"Labadie, Johnston and Von",Mercedes-Benz,Sprinter,2011,Turquoise,37585
+728,2020-03-05,Kohler-Mosciski,Toyota,Previa,1997,Indigo,83432
+729,2021-11-10,"Swaniawski, Bergnaum and Torphy",Volkswagen,Fox,1992,Blue,69088
+730,2021-02-02,"McClure, Swift and Hermann",Ford,Crown Victoria,1995,Teal,24134
+731,2018-10-19,"Schinner, Reichel and Carter",Volkswagen,GTI,2006,Purple,72411
+732,2018-02-18,Hilll-Cremin,Spyker,C8 Spyder Wide Body,2004,Fuscia,54575
+733,2020-10-19,Kris-Schumm,Mercedes-Benz,E-Class,1992,Pink,25228
+734,2019-05-10,Gerhold-Turner,Buick,Century,2000,Aquamarine,72018
+735,2019-03-02,Cummerata-Feil,Audi,5000CS,1988,Red,24910
+736,2019-08-10,Schamberger-Durgan,Nissan,Pathfinder,2008,Indigo,13648
+737,2018-06-05,"Zieme, Grant and Roberts",Ford,Econoline E150,1994,Mauv,57143
+738,2018-09-05,Smitham LLC,Honda,del Sol,1994,Mauv,64464
+739,2022-01-17,Gottlieb-Satterfield,Hyundai,Azera,2012,Fuscia,78199
+740,2018-01-28,"Kiehn, Bartoletti and Ferry",Cadillac,CTS-V,2010,Aquamarine,88435
+741,2018-03-23,Yundt-O'Hara,Chevrolet,Avalanche 1500,2005,Purple,77748
+742,2020-12-28,Labadie-Cummings,Subaru,Leone,1985,Khaki,16473
+743,2018-09-01,Bayer-O'Hara,Toyota,Land Cruiser,1996,Indigo,40890
+744,2023-01-29,"Rau, Grady and Kunde",Honda,Fit,2012,Turquoise,50820
+745,2018-11-27,"Nitzsche, Cormier and Green",Hyundai,Santa Fe,2006,Teal,98519
+746,2019-12-28,"Bartoletti, D'Amore and McCullough",GMC,Safari,2003,Aquamarine,70315
+747,2018-04-12,Kerluke-Legros,Ford,E250,2007,Indigo,91532
+748,2023-01-03,"Kreiger, Lowe and Schoen",Volvo,S80,2004,Teal,40965
+749,2018-12-09,Pacocha Group,Nissan,Sentra,2006,Green,97062
+750,2019-12-26,Reichert-Bosco,Aston Martin,Vantage,2010,Green,52927
+751,2021-12-30,Schamberger-Kulas,Chrysler,Concorde,2001,Khaki,67860
+752,2020-07-31,"Mann, Runte and Wolff",Honda,Accord,1987,Violet,24288
+753,2020-10-09,Walsh Inc,Nissan,Rogue,2008,Fuscia,27372
+754,2021-05-14,"Labadie, Cassin and Bauch",Ford,Escape,2012,Fuscia,13255
+755,2022-06-07,Beier Inc,Honda,Accord,1997,Teal,82146
+756,2022-03-13,"Gleichner, Quigley and Flatley",Ford,Country,1967,Orange,50068
+757,2019-10-22,Windler-Herzog,Ford,LTD Crown Victoria,1984,Puce,44168
+758,2021-03-22,"Kohler, Blanda and Konopelski",Chevrolet,Malibu Maxx,2006,Green,51850
+759,2023-03-07,"Nienow, Hirthe and Wiegand",Mazda,626,1988,Red,34698
+760,2019-01-27,Rogahn Group,GMC,Rally Wagon G2500,1995,Blue,33127
+761,2019-05-14,Steuber and Sons,GMC,Terrain,2011,Pink,74078
+762,2023-04-08,Haley-Berge,Saturn,S-Series,1992,Orange,29271
+763,2021-11-29,"Gusikowski, Blick and Kilback",Chevrolet,Tahoe,1998,Indigo,27640
+764,2021-12-06,Wisoky LLC,Dodge,Viper RT/10,1994,Yellow,21393
+765,2020-02-20,Terry-Haley,Ford,Econoline E350,1993,Blue,71072
+766,2018-07-09,Walter-Swift,Chrysler,Pacifica,2005,Yellow,28418
+767,2022-01-28,"Buckridge, Bogan and Medhurst",Aston Martin,Vantage,2006,Maroon,18416
+768,2021-12-16,Armstrong-Stamm,Mercedes-Benz,Sprinter 2500,2012,Blue,37865
+769,2018-01-04,Waters and Sons,Buick,Skylark,1986,Blue,54270
+770,2020-05-17,"Sanford, Kirlin and Heller",Volkswagen,Golf,2003,Green,29215
+771,2022-03-09,Batz-Purdy,Maserati,Biturbo,1985,Red,53374
+772,2020-04-01,Reichert-Abernathy,Subaru,Alcyone SVX,1997,Khaki,93512
+773,2018-06-18,Rowe Inc,Pontiac,Torrent,2008,Purple,46070
+774,2021-07-24,Welch LLC,Isuzu,Oasis,1996,Crimson,84245
+775,2023-01-08,"Kris, Emard and Kuhlman",Kia,Rio,2006,Yellow,69521
+776,2020-12-05,Walker Inc,Chrysler,LHS,1995,Red,87956
+777,2022-05-16,"Fisher, Tillman and Cole",BMW,5 Series,1992,Violet,93171
+778,2022-12-15,Ebert-Weber,Ford,F150,2008,Blue,74747
+779,2019-11-22,"Dooley, Schowalter and Hamill",Porsche,928,1994,Red,85527
+780,2021-07-01,Sipes LLC,Maserati,Quattroporte,2008,Khaki,24062
+781,2019-03-04,"Bode, Rodriguez and Wiza",MINI,Clubman,2012,Teal,61560
+782,2022-10-10,Sawayn LLC,Mitsubishi,3000GT,1992,Pink,94402
+783,2021-12-08,"Parisian, Roberts and Spencer",Mazda,B-Series,1999,Red,89124
+784,2022-10-14,Fadel-Wolf,Dodge,Avenger,1998,Indigo,13775
+785,2021-07-14,"Mann, Welch and McCullough",Pontiac,G6,2008,Blue,83951
+786,2020-10-07,Douglas-Rath,Oldsmobile,Bravada,2002,Turquoise,88292
+787,2019-08-30,Gorczany-Beahan,Dodge,Neon,1999,Violet,12553
+788,2022-07-30,Daugherty LLC,Lexus,RX,2012,Aquamarine,62135
+789,2022-03-26,"Schumm, Pollich and Olson",Mercury,Cougar,1997,Pink,46809
+790,2018-08-28,Ledner-O'Kon,Nissan,240SX,1992,Purple,91676
+791,2022-02-28,Upton-Rohan,Shelby,GT350,1969,Mauv,11881
+792,2018-09-27,Stiedemann-Lubowitz,Jaguar,XJ Series,1996,Maroon,88159
+793,2020-10-22,Erdman LLC,Honda,Ridgeline,2007,Maroon,92651
+794,2019-05-08,"Koch, Prosacco and Stanton",BMW,M,2000,Turquoise,50372
+795,2020-08-03,Collins-Stark,Ford,F-Series,2009,Turquoise,77240
+796,2021-03-18,Corkery-Gerhold,Lexus,LX,2004,Mauv,75774
+797,2020-02-13,Legros-Oberbrunner,Mitsubishi,Space,1984,Purple,48782
+798,2020-08-09,"Powlowski, Blick and Nolan",Audi,A6,2000,Red,42760
+799,2021-04-18,"Graham, Koepp and Walsh",Infiniti,G,2009,Yellow,47731
+800,2019-11-21,Buckridge Group,Hyundai,Santa Fe,2002,Red,19243
+801,2022-07-31,Gislason-Kozey,Lamborghini,Countach,1987,Blue,87741
+802,2018-08-27,Bailey-Dietrich,Renault,Alliance,1983,Green,58402
+803,2019-04-01,"Dietrich, Legros and Schulist",Volkswagen,Golf,1993,Indigo,65492
+804,2019-01-03,Zieme LLC,Chevrolet,Suburban 2500,2005,Teal,95445
+805,2019-06-05,"Rogahn, Lemke and VonRueden",GMC,1500 Club Coupe,1996,Goldenrod,21276
+806,2018-12-12,"Hudson, Berge and Crist",Mazda,B-Series,2000,Green,89497
+807,2022-09-10,"Heathcote, Funk and Schimmel",Plymouth,Neon,1998,Mauv,26012
+808,2018-05-17,McDermott-Sauer,Chevrolet,2500,1997,Violet,90156
+809,2020-09-12,Hintz-Sawayn,Chevrolet,1500,1997,Fuscia,43013
+810,2019-06-30,"Goyette, D'Amore and Durgan",BMW,Z4,2012,Pink,46782
+811,2019-12-07,"Jast, White and Lockman",Isuzu,Trooper,1998,Indigo,88580
+812,2021-08-28,"Kunde, Kuhn and Christiansen",Toyota,Celica,1997,Goldenrod,83283
+813,2019-01-02,Gerhold LLC,Volkswagen,Cabriolet,1988,Red,36384
+814,2022-06-26,"Connelly, Osinski and Pouros",Chevrolet,3500,1993,Teal,48967
+815,2018-01-11,"Weissnat, Hayes and O'Hara",Cadillac,DeVille,1994,Khaki,15064
+816,2022-02-16,"Fahey, Trantow and Kuphal",Nissan,Sentra,1992,Maroon,83152
+817,2018-07-30,Goldner-King,Chevrolet,HHR,2007,Yellow,23598
+818,2018-01-09,Fisher-Sipes,Suzuki,SJ,1989,Goldenrod,80870
+819,2021-05-28,"Miller, Grimes and Flatley",Isuzu,Hombre,2000,Violet,70134
+820,2020-03-25,Hammes-Cronin,Toyota,Land Cruiser,2003,Pink,62032
+821,2018-09-03,Rogahn Inc,Dodge,Aspen,1976,Green,89023
+822,2019-07-05,Herzog-Crist,Toyota,Tundra,2000,Mauv,39937
+823,2020-06-09,Fahey-Cremin,Ford,Thunderbird,1972,Aquamarine,72383
+824,2022-07-14,"Bartell, Muller and Von",Mercedes-Benz,C-Class,1998,Turquoise,71884
+825,2021-12-04,Moen LLC,Chrysler,300M,2001,Orange,59728
+826,2018-09-18,Collins and Sons,Ford,Probe,1995,Goldenrod,77457
+827,2019-09-21,"Lubowitz, Rolfson and Breitenberg",Chevrolet,Corvette,1975,Puce,36700
+828,2021-09-23,"Rempel, Windler and Heaney",Lexus,GS,2006,Maroon,56689
+829,2022-04-11,"Collins, Wolf and O'Hara",Mercedes-Benz,S-Class,1991,Maroon,60665
+830,2021-12-28,Thompson-Lind,Subaru,Forester,2008,Red,71811
+831,2021-10-04,Lakin-Abernathy,Geo,Metro,1993,Green,51384
+832,2023-02-16,"McLaughlin, Friesen and Sawayn",GMC,2500 Club Coupe,1995,Pink,71828
+833,2018-09-23,"Cummerata, Kuhic and Mante",Volvo,S80,2010,Orange,76986
+834,2019-12-12,Kris and Sons,Mitsubishi,Diamante,1992,Orange,78332
+835,2021-06-23,"Ward, Kozey and Feil",Acura,NSX,1999,Indigo,97883
+836,2019-10-21,Walsh-Ebert,BMW,X5,2002,Indigo,68355
+837,2021-10-26,"Streich, Lebsack and Hermann",Mazda,Mazdaspeed 3,2007,Orange,77191
+838,2022-10-23,"Murray, Dickens and Little",GMC,Savana 3500,2004,Turquoise,25803
+839,2020-05-05,"Crona, Heathcote and Hegmann",Chevrolet,Express,2006,Yellow,96290
+840,2023-03-09,Johns-Streich,Mitsubishi,Montero Sport,1997,Crimson,19920
+841,2018-09-11,"Schamberger, Terry and Herzog",Dodge,Dakota,2010,Violet,29355
+842,2021-06-07,Baumbach Group,Dodge,Intrepid,1999,Yellow,18243
+843,2018-05-19,Cartwright-Christiansen,Toyota,Solara,2003,Mauv,90581
+844,2021-12-09,Lubowitz-Wolff,Buick,Regal,1986,Maroon,19254
+845,2022-05-20,"McKenzie, Lindgren and Ondricka",Chevrolet,Express,2006,Pink,68713
+846,2020-06-12,"Schinner, Kemmer and Funk",Saturn,L-Series,2000,Aquamarine,37595
+847,2020-04-11,Connelly Group,Scion,tC,2007,Crimson,72539
+848,2022-08-26,Mraz-Conroy,Ford,Econoline E250,2000,Yellow,76130
+849,2018-02-14,"Metz, Casper and Buckridge",Infiniti,G37,2011,Red,30549
+850,2018-01-07,"Glover, Jerde and Sawayn",Eagle,Talon,1991,Khaki,42087
+851,2018-12-29,"Zemlak, Nicolas and Bradtke",Ford,Bronco II,1990,Orange,11910
+852,2022-05-09,"Tillman, Mosciski and Considine",Infiniti,G,1995,Fuscia,32632
+853,2022-09-23,Kutch Group,Chrysler,300,2006,Fuscia,65065
+854,2021-04-01,Monahan-MacGyver,Saturn,VUE,2002,Violet,94448
+855,2018-09-08,"Kirlin, Emard and Halvorson",Toyota,RAV4,2005,Indigo,16354
+856,2018-03-18,"Kris, Simonis and Hammes",Chrysler,300M,2004,Maroon,94013
+857,2019-02-22,"Schaden, Cormier and Moore",Acura,TL,2005,Pink,66572
+858,2020-02-27,"Littel, Rau and Sauer",Mitsubishi,Lancer Evolution,2006,Maroon,11720
+859,2022-07-15,Bogan and Sons,GMC,2500 Club Coupe,1995,Orange,23506
+860,2019-01-11,Kessler Group,Suzuki,Verona,2005,Green,60163
+861,2021-03-04,Franecki-Jakubowski,Isuzu,Space,1993,Red,11476
+862,2018-12-01,Walker-Schroeder,Pontiac,Grand Prix,2002,Orange,25719
+863,2021-05-16,Wilkinson-White,Dodge,Stealth,1995,Orange,61203
+864,2019-09-09,Quigley-Durgan,Acura,MDX,2004,Red,24143
+865,2020-04-30,Bergstrom-Roberts,Corbin,Sparrow,1999,Crimson,12634
+866,2018-03-05,"Harvey, Kreiger and Beier",Chevrolet,HHR,2007,Khaki,52670
+867,2018-01-25,Green LLC,Honda,Ridgeline,2006,Pink,26993
+868,2021-06-26,Lemke Group,Dodge,Ram Van B350,1994,Pink,72672
+869,2019-09-14,"O'Kon, Beer and Johnson",Chevrolet,Avalanche,2011,Pink,92369
+870,2019-03-27,Hayes and Sons,Mazda,MX-6,1995,Puce,42193
+871,2018-03-18,Bergstrom-Breitenberg,Dodge,Ram 3500,1997,Puce,30176
+872,2018-12-03,"Reinger, Carter and Luettgen",Toyota,Supra,1996,Green,82415
+873,2019-06-02,Schuppe-Zboncak,Dodge,Ram 2500,1996,Blue,19376
+874,2018-02-14,"Dooley, Spencer and McKenzie",Jaguar,S-Type,2000,Fuscia,59202
+875,2018-12-26,"Emmerich, Walsh and Lebsack",Chevrolet,Suburban 2500,2003,Orange,88931
+876,2020-11-08,"Altenwerth, Rodriguez and Parisian",Jaguar,XF,2012,Yellow,38836
+877,2020-06-10,Smitham-Gutmann,Cadillac,Catera,1999,Green,13615
+878,2022-07-20,"Berge, Barton and Mante",GMC,Savana,2012,Red,68138
+879,2022-11-02,Boehm-Blick,Saturn,VUE,2002,Khaki,37991
+880,2020-03-27,Quitzon-Barrows,Infiniti,I,2002,Indigo,92210
+881,2018-06-01,Roberts-Berge,Subaru,Outback,2000,Puce,95471
+882,2021-03-15,Ledner-Hudson,GMC,1500,1995,Pink,31823
+883,2019-01-26,Hodkiewicz LLC,Land Rover,Range Rover,1990,Blue,53006
+884,2022-10-09,Marquardt-Aufderhar,Land Rover,LR2,2011,Orange,71038
+885,2022-11-04,"Yundt, Halvorson and Gerhold",Hyundai,Sonata,1999,Khaki,50041
+886,2020-10-25,Glover and Sons,Buick,LeSabre,1992,Mauv,23066
+887,2022-03-09,Boehm-Heidenreich,Nissan,Rogue,2008,Green,84279
+888,2020-12-18,"Grimes, Doyle and Zemlak",Ford,Econoline E250,2002,Pink,34445
+889,2021-09-11,Nolan LLC,Buick,Regal,1990,Aquamarine,58869
+890,2018-02-01,"Abshire, Hudson and Murray",Buick,LeSabre,2001,Blue,57980
+891,2022-12-22,"Gerhold, O'Connell and Powlowski",Ford,Festiva,1992,Orange,69260
+892,2022-06-27,Kiehn LLC,Volvo,V70,2007,Blue,69337
+893,2020-11-30,Gorczany-Schoen,Dodge,Caravan,2010,Yellow,92078
+894,2020-10-11,Boyle-Cummings,Mazda,Miata MX-5,2001,Blue,62105
+895,2020-12-22,Wintheiser-Lemke,Mercedes-Benz,M-Class,2006,Orange,47362
+896,2018-03-14,Botsford LLC,Ford,Probe,1993,Teal,70488
+897,2020-02-05,"Mayer, Nikolaus and Fay",Ford,LTD Crown Victoria,1984,Blue,94171
+898,2021-04-24,Rath-Goyette,Ford,Explorer Sport Trac,2008,Teal,59836
+899,2022-02-28,Bernhard-Koepp,Ford,Bronco II,1985,Maroon,35655
+900,2018-08-25,"Monahan, Brakus and Leffler",Jeep,Wrangler,2002,Red,63013
+901,2022-01-30,"Lockman, Rice and Kiehn",Dodge,Stratus,2003,Aquamarine,61502
+902,2021-05-26,"Jacobson, Oberbrunner and Bernier",Mitsubishi,Eclipse,2007,Crimson,26429
+903,2020-11-02,Mraz-Ortiz,Audi,A4,2008,Yellow,84789
+904,2018-11-17,Conroy-Jones,Oldsmobile,98,1995,Indigo,75905
+905,2021-02-20,Wisozk-Kulas,Lincoln,Mark LT,2008,Blue,94197
+906,2021-03-25,"Cassin, Kuhic and Gottlieb",Chevrolet,Equinox,2010,Indigo,56889
+907,2020-12-16,Wyman-Nader,Ford,Explorer Sport Trac,2001,Teal,21179
+908,2021-05-15,Waelchi-Jacobson,Honda,Civic,1995,Crimson,40458
+909,2021-05-21,Kertzmann-Schmitt,BMW,545,2004,Puce,13627
+910,2019-09-01,Blanda-Sawayn,Pontiac,Firebird,1995,Mauv,66959
+911,2019-08-02,"Bins, Rempel and Rau",Audi,200,1989,Maroon,76892
+912,2021-08-26,Volkman-Kovacek,Ford,Probe,1992,Indigo,31840
+913,2023-03-06,"Balistreri, Turcotte and Kerluke",Chevrolet,Blazer,2004,Aquamarine,45955
+914,2018-04-02,Lynch Inc,Aptera,Type-1h,2010,Turquoise,23351
+915,2022-10-19,"Kulas, Hagenes and Goldner",Maserati,GranTurismo,2011,Teal,62294
+916,2018-05-04,"Schumm, Borer and Kerluke",Saab,900,1997,Puce,40745
+917,2021-03-29,Moen and Sons,Chevrolet,Suburban 1500,1998,Puce,63087
+918,2022-05-17,Nicolas-Schowalter,Nissan,Versa,2011,Red,44859
+919,2018-02-03,Dietrich LLC,Dodge,Challenger,2008,Purple,64719
+920,2021-08-28,"Walker, Heller and Leffler",GMC,2500,1999,Green,46064
+921,2022-11-13,Beatty Group,Kia,Sportage,2012,Khaki,82338
+922,2019-08-31,"Raynor, Murazik and Heidenreich",Land Rover,Freelander,2002,Blue,61538
+923,2019-03-05,Parisian LLC,GMC,Sierra 3500,2012,Red,79692
+924,2019-12-14,Schowalter and Sons,Hyundai,Santa Fe,2001,Purple,20279
+925,2020-03-22,Kunde Inc,Chevrolet,Express 3500,2000,Blue,53862
+926,2020-11-23,"Lehner, Hudson and Pouros",Pontiac,Turbo Firefly,1990,Indigo,26376
+927,2018-11-07,"Crooks, Friesen and Kshlerin",Pontiac,Vibe,2006,Orange,72027
+928,2021-02-09,Marks-Hintz,Toyota,Corolla,2004,Turquoise,58854
+929,2019-06-28,Schmidt LLC,Pontiac,Firebird,1999,Teal,74719
+930,2020-05-26,Stokes-Wisoky,Suzuki,SJ,1989,Khaki,49781
+931,2022-11-25,"Marks, Kuhlman and Hauck",Mazda,Tribute,2004,Khaki,17217
+932,2020-06-05,Rice LLC,Eagle,Talon,1994,Khaki,95452
+933,2023-02-08,"Durgan, Hodkiewicz and Kozey",Lamborghini,Gallardo,2012,Maroon,71717
+934,2021-01-18,"Rempel, Lubowitz and O'Connell",Chevrolet,Prizm,2000,Fuscia,90747
+935,2020-09-19,D'Amore-Bailey,Mazda,B-Series,2003,Blue,81959
+936,2020-08-30,Dickinson-Emard,Ford,LTD Crown Victoria,1985,Crimson,24338
+937,2021-04-09,"Orn, Carter and Swift",Porsche,Cayenne,2005,Blue,72181
+938,2019-07-25,Hoeger-Runte,Dodge,Neon,2001,Orange,38221
+939,2020-04-30,Torp LLC,Pontiac,Bonneville,2004,Khaki,98149
+940,2020-05-28,"Schumm, Jacobson and Douglas",Acura,TL,2008,Maroon,67858
+941,2020-09-13,"Moen, Ankunding and Mills",Volkswagen,GTI,2006,Violet,74048
+942,2021-02-10,"Jenkins, Howe and Trantow",Kia,Sorento,2007,Aquamarine,92698
+943,2018-07-26,Medhurst Group,BMW,X3,2010,Aquamarine,76142
+944,2022-05-10,Carter-Okuneva,Mitsubishi,Truck,1987,Goldenrod,52679
+945,2023-01-06,Hamill Group,Ford,Taurus,2007,Khaki,57606
+946,2019-07-25,"Ryan, Pfannerstill and Reilly",Lotus,Elan,1990,Crimson,52377
+947,2018-09-17,Emard LLC,Ferrari,California,2010,Purple,32910
+948,2018-09-19,Jacobs-Crooks,Ford,F-Series,1990,Crimson,74011
+949,2022-09-29,Hyatt-Will,Chevrolet,Silverado 1500,2001,Indigo,99074
+950,2018-12-27,Gutkowski-Weimann,Dodge,Grand Caravan,1992,Teal,54527
+951,2022-07-09,Bergstrom Inc,Ford,F350,2002,Khaki,28179
+952,2018-04-25,Bruen and Sons,Volvo,S80,2005,Fuscia,70863
+953,2020-07-04,Beatty Inc,Chevrolet,Aveo,2009,Orange,81940
+954,2022-09-17,Gottlieb-Shields,GMC,Envoy XL,2006,Yellow,71320
+955,2021-01-16,"Murray, Walker and Bergnaum",BMW,3 Series,2005,Turquoise,70836
+956,2019-06-15,Bogisich-Williamson,Volkswagen,Touareg,2005,Purple,52854
+957,2018-09-22,"Von, Auer and Yost",Buick,Regal,1999,Aquamarine,25915
+958,2022-10-06,Armstrong-Lehner,Chevrolet,Malibu,1998,Yellow,27279
+959,2021-08-19,"Cassin, Gerhold and Hilpert",Mercedes-Benz,CLK-Class,2005,Orange,11535
+960,2020-10-16,Heller-Russel,Chrysler,Town & Country,2004,Violet,50929
+961,2018-02-12,Schroeder-Stracke,Toyota,Solara,2008,Crimson,52394
+962,2023-02-07,Parker Group,Volkswagen,GLI,2009,Red,18672
+963,2018-07-06,Conn-Reinger,Saab,9000,1992,Pink,85370
+964,2018-02-10,Kling and Sons,Cadillac,STS,2010,Orange,82521
+965,2020-04-25,"Stracke, Crooks and Ryan",Nissan,Maxima,1995,Yellow,92377
+966,2018-02-11,Veum LLC,Oldsmobile,Toronado,1966,Orange,58208
+967,2022-08-27,Adams-Carroll,Mazda,MPV,1998,Mauv,49502
+968,2021-11-19,Conn Group,Lincoln,Navigator,2007,Mauv,45702
+969,2018-11-21,"Jast, Stehr and Crona",Dodge,Spirit,1994,Puce,33379
+970,2020-12-23,"Adams, Erdman and Sauer",Buick,Century,1989,Orange,27657
+971,2018-03-19,"Klein, Blick and Goodwin",Mazda,CX-5,2013,Indigo,72239
+972,2019-11-02,Schulist-Lind,Chevrolet,Monte Carlo,1999,Goldenrod,11663
+973,2020-05-08,"Larson, Ullrich and Dickinson",Suzuki,SX4,2007,Yellow,92899
+974,2022-05-24,"Paucek, Deckow and Heller",Lincoln,Town Car,2007,Green,23696
+975,2018-11-24,Bahringer Group,Land Rover,Discovery,2011,Turquoise,54687
+976,2021-10-05,Graham Group,Chevrolet,Impala,1995,Red,68379
+977,2022-05-01,Beier Group,Audi,S6,2008,Mauv,86454
+978,2020-01-18,Kihn-Prosacco,Infiniti,G37,2009,Pink,96907
+979,2019-02-12,"Altenwerth, Hauck and Wisozk",Pontiac,Sunbird,1985,Violet,24544
+980,2018-02-24,"Bechtelar, Auer and Quigley",Ford,Crown Victoria,1998,Teal,36410
+981,2020-08-09,Kohler-Veum,Chrysler,Sebring,1999,Teal,73015
+982,2018-12-23,Harvey-Murazik,Buick,Rendezvous,2005,Teal,52222
+983,2022-04-22,Bednar Group,BMW,M,2000,Green,23238
+984,2020-12-16,Hauck-Hilll,Mitsubishi,Excel,1987,Mauv,47702
+985,2018-12-02,Trantow Group,Mercury,Grand Marquis,2004,Maroon,25480
+986,2022-04-05,"White, Kilback and Kuhic",Mercury,Sable,1991,Red,56449
+987,2019-05-04,Murazik Group,Lamborghini,Gallardo,2011,Maroon,20107
+988,2018-11-06,"Huel, D'Amore and Adams",Dodge,Durango,2012,Green,79426
+989,2020-12-06,"Goyette, Sawayn and Daugherty",Mercedes-Benz,CL-Class,2005,Purple,51083
+990,2022-07-08,Nolan-Hand,GMC,Yukon XL 1500,2011,Yellow,21516
+991,2023-03-02,Stark Group,Lincoln,Navigator,2005,Puce,10155
+992,2020-03-17,VonRueden Inc,Ford,Explorer Sport,2000,Maroon,58211
+993,2022-11-01,"Reinger, Braun and Grimes",Isuzu,Hombre Space,1997,Goldenrod,81179
+994,2022-04-01,"Ratke, Greenfelder and West",Acura,Legend,1989,Purple,53995
+995,2019-02-17,"Bergstrom, Ondricka and Keeling",Chevrolet,Astro,2000,Aquamarine,25587
+996,2020-10-27,Lowe-D'Amore,Pontiac,Grand Prix,1990,Maroon,40842
+997,2020-05-06,Beatty LLC,Aston Martin,V8 Vantage S,2012,Turquoise,34825
+998,2018-12-04,"Parisian, Reynolds and Fritsch",GMC,Yukon XL 2500,2004,Blue,21513
+999,2023-04-26,Homenick Group,Ford,Freestar,2007,Fuscia,46276
+1000,2023-03-28,Deckow Group,Audi,V8,1990,Orange,77630
