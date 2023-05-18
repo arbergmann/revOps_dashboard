@@ -1,0 +1,93 @@
+appdirs==1.4.4
+appnope==0.1.3
+asttokens==2.2.1
+attrs==23.1.0
+backcall @ file:///home/ktietz/src/ci/backcall_1611930011877/work
+Bottleneck @ file:///Users/ec2-user/ci_py311/bottleneck_1678322312632/work
+Brotli @ file:///Users/ec2-user/ci_py311/brotli-split_1678379922007/work
+brotlipy==0.7.0
+certifi @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_b64zphacdv/croot/certifi_1683875375103/work/certifi
+cffi @ file:///Users/ec2-user/ci_py311/cffi_1678315312775/work
+cfgv==3.3.1
+charset-normalizer @ file:///tmp/build/80754af9/charset-normalizer_1630003229654/work
+click @ file:///Users/ec2-user/ci_py311/click_1678318124837/work
+comm==0.1.3
+cryptography @ file:///Users/ec2-user/ci_py311_2/cryptography_1679335457662/work
+dash @ file:///Users/ec2-user/ci_py311/dash_1678410845018/work
+dash-bootstrap-components==1.4.1
+dash-iconify==0.1.2
+dash-mantine-components==0.10.2
+dash-tools==1.11.1
+debugpy @ file:///Users/ec2-user/ci_py311/debugpy_1678317801115/work
+decorator @ file:///opt/conda/conda-bld/decorator_1643638310831/work
+distlib==0.3.6
+docopt==0.6.2
+executing @ file:///opt/conda/conda-bld/executing_1646925071911/work
+filelock==3.12.0
+Flask @ file:///Users/ec2-user/ci_py311/flask_1678380788105/work
+Flask-Compress @ file:///Users/ec2-user/ci_py311/flask-compress_1678391154931/work
+gunicorn==20.1.0
+identify==2.5.24
+idna @ file:///Users/ec2-user/ci_py311/idna_1678315819133/work
+iniconfig==2.0.0
+ipykernel @ file:///Users/ec2-user/ci_py311/ipykernel_1678318220696/work
+ipython==8.13.2
+itsdangerous @ file:///tmp/build/80754af9/itsdangerous_1621432558163/work
+jedi @ file:///Users/ec2-user/ci_py311_2/jedi_1679336327335/work
+Jinja2 @ file:///Users/ec2-user/ci_py311/jinja2_1678317138271/work
+jupyter_client==8.2.0
+jupyter_core @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_b82fz_h369/croot/jupyter_core_1679906581737/work
+MarkupSafe @ file:///Users/ec2-user/ci_py311/markupsafe_1678316973889/work
+matplotlib-inline @ file:///Users/ec2-user/ci_py311/matplotlib-inline_1678317544666/work
+mkl-fft==1.3.6
+mkl-random @ file:///Users/ec2-user/mkl/mkl_random_1682994911338/work
+mkl-service==2.4.0
+nest-asyncio @ file:///Users/ec2-user/ci_py311/nest-asyncio_1678316288195/work
+nodeenv==1.8.0
+numexpr @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_1b50c1js9s/croot/numexpr_1683227065029/work
+numpy @ file:///Users/ec2-user/mkl/numpy_and_numpy_base_1682973769567/work
+packaging==21.0
+pandas==1.5.3
+parso @ file:///opt/conda/conda-bld/parso_1641458642106/work
+patsy==0.5.3
+pexpect @ file:///tmp/build/80754af9/pexpect_1605563209008/work
+pickleshare @ file:///tmp/build/80754af9/pickleshare_1606932040724/work
+pipreqs==0.4.11
+platformdirs==3.5.1
+plotly @ file:///Users/ec2-user/ci_py311/plotly_1678382250051/work
+pluggy==1.0.0
+pooch @ file:///tmp/build/80754af9/pooch_1623324770023/work
+pre-commit==2.16.0
+prompt-toolkit @ file:///Users/ec2-user/ci_py311/prompt-toolkit_1678317707969/work
+psutil @ file:///Users/ec2-user/ci_py311_2/psutil_1679337242143/work
+ptyprocess @ file:///tmp/build/80754af9/ptyprocess_1609355006118/work/dist/ptyprocess-0.7.0-py2.py3-none-any.whl
+pure-eval @ file:///opt/conda/conda-bld/pure_eval_1646925070566/work
+py==1.11.0
+pycparser @ file:///tmp/build/80754af9/pycparser_1636541352034/work
+Pygments @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_c9_g4thruy/croot/pygments_1683671819081/work
+pyOpenSSL @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_19gfn1ib_u/croot/pyopenssl_1678965300171/work
+pyparsing==3.0.9
+PySocks @ file:///Users/ec2-user/ci_py311/pysocks_1678315868424/work
+pytest==6.2.5
+python-dateutil @ file:///tmp/build/80754af9/python-dateutil_1626374649649/work
+pytz @ file:///Users/ec2-user/ci_py311/pytz_1678318034461/work
+PyYAML==6.0
+pyzmq @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_45g440l380/croot/pyzmq_1682697646668/work
+requests @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_ec2sxfa_zk/croot/requests_1682607519671/work
+ruamel.yaml==0.17.21
+scipy==1.10.1
+six @ file:///tmp/build/80754af9/six_1644875935023/work
+stack-data @ file:///opt/conda/conda-bld/stack_data_1646927590127/work
+statsmodels @ file:///Users/ec2-user/ci_py311/statsmodels_1678394299954/work
+tenacity @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_cct5tq4h70/croot/tenacity_1682972283326/work
+termcolor==1.1.0
+toml==0.10.2
+tornado==6.3.2
+traitlets @ file:///Users/ec2-user/ci_py311/traitlets_1678316097905/work
+urllib3 @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_61c6ppfd7m/croot/urllib3_1680254700568/work
+virtualenv==20.23.0
+visdcc==0.0.50
+wcwidth==0.2.6
+Werkzeug @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_fegt3z60s3/croot/werkzeug_1679489762631/work
+yarg==0.1.9
+yolk3k==0.9
