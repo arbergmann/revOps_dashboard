@@ -11,44 +11,24 @@ import sys, os
 import chart_functions
 import tools
 
-purchases, opportunities, competitors = tools.load_data()
+# Load Data
+purchases, opportunities, competitors, financials = tools.load_data()
 
 #%%
 
-data_p = purchases.copy()
-data_c = competitors.copy()
+competitor_meds = pd.DataFrame(competitors.groupby('car_make')['purchase_price'].median()).rename(columns={'purchase_price':'Competitor Median'})
+purchase_avgs = pd.DataFrame(purchases.groupby(['car_make']).agg({'purchase_price' : [np.mean, 'count']}).droplevel(axis=1, level=0)).rename(columns={'mean': 'Average Price', 'count':'Count'})
 
+pricing_deltas = pd.concat([competitor_meds, purchase_avgs], axis=1, join='inner', ignore_index=False)
+pricing_deltas['pricing_delta'] = pricing_deltas['Average Price'] - pricing_deltas['Competitor Median']
+pricing_deltas['pricing_delta_pct'] = pricing_deltas['Average Price'] / pricing_deltas['Competitor Median'] - 1
+pricing_deltas.sort_values('pricing_delta_pct', ascending=True, inplace=True)
+pricing_deltas['Opportunity Cost'] = pricing_deltas['pricing_delta'] * pricing_deltas['Count']
+pricing_deltas = pricing_deltas.rename(columns={'pricing_delta_pct' : 'Pricing Delta (%)', 'pricing_delta' : 'Pricing Delta ($)'}).head(10)
 
-def fig_competitor(make_value, model_value):
-    if (make_value is None) and (model_value is None):
-        data_p = purchases.copy()
-        data_c = competitors.copy()
+pricing_deltas
 
-        # Plot competitor data
-        fig = px.box(data_c, x='car_make', y='purchase_price')
-        
-        # plot user data....
-        # fig.layout.xaxis2 = go.layout.XAxis(overlaying='x', range=[0,1], showticklabels=False)
-        # fig.add_scatter(x = [0, 1], y=[....figure out how to provide for each different product])
-        # likely requires a for loop, i.e.:
-        # for col in df:
-            # fig.add_trace....
+# %%
 
-    elif (make_value is not None) and (model_value is None):
-        data_p = purchases[purchases['car_make'] == make_value]
-        data_c = competitors[competitors['car_make'] == make_value]
-
-        fig = px.box(data_c, x='car_model', y='purchase_price')
-
-    else:
-        data_p = competitors[(competitors['car_make'] == make_value) & (competitors['car_model'] == model_value)]
-        data_c = competitors[(competitors['car_make'] == make_value) & (competitors['car_model'] == model_value)]
-
-        fig = px.box(data_c, x='car_model', y='purchase_price')
-
-    return fig
-
-fig_competitor(make_value=None, model_value=None)
-# fig_competitor(make_value='Ford', model_value=None)
-# fig_competitor(make_value='Ford', model_value='Bronco II')
+financials.iloc[:,-1]
 # %%
