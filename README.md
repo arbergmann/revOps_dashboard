@@ -17,6 +17,7 @@ Overall, this data is meant to be extremely "mock". Without extensive coding, th
 The more I worked on this, the more I grew to think of it as product categories (make) and product offerings (models). Many of the principles here could be applied to something like retail or online services with multiple different product lines. If it helps to think of it more like that, perhaps that would be preferred until I can change out data to something that makes more sense.
 
 <b>Data Sources</b>
+<br>
 <i>All data are from Mockaroo </i>
 - Purchase data
 - Opportunity data
@@ -29,6 +30,9 @@ All brainstorming ideas, mock-ups, and decision logs can be found the `decision_
 - 3-4 hours building actual code
 - 4-5 hours troubleshooting Dash-related rendering issues, refactoring
 - 2 hours initial, code documentation
+
+<br>
+<br>
 
 <!-- RUN THE CODE -->
 ## How to Run the Code
@@ -52,21 +56,26 @@ python3 dashboard_app.py
 ```
 7) A localhost IP number will generate where you can access the development server to run the dashboard. Copy and pase this into a browser window.
 
+<br>
+<br>
 
 <!-- CHALLENGES -->
 ## Challenges
 
-<b>Data</b>
+<b>Data</b><br>
 Some of the data-related challenges here were limitations with <i>Mockeroo</i>. As a free user, one is only allowed 1000 lines, so I had to diligently choose how to break that up. Upon my initial first pass, I chose to look at 6 months of purchase data, and 12 months of opportunity data (also included in the 6 months of purchase data). This allowed for some rudimentary calculations on sales cycle length and QoQ sales metrics, but limited my lookback ability for things like client lifetime value.
 
 The data was also extremely individualized, and with 1000 samples, I still did not get enough overlap to see significant, meaningful breakdowns. For example, the car with the most sales only had 3 sales of that make/model (not even broken down by year). So, this makes the charts seem a little bit messy, and perhaps difficult to get some initial insights from. In fact, the QoQ sales chart trips the debugger when filters are used, simply because there are not enough observations of any given product on a breakdown. Given more time, I will look into how to make the data more repeatable so that the dashboard is more readable.
 
-<b>Code</b>
+<b>Code</b><br>
 Initially, the code was written fairly cleanly. I had a single callback for the filtering portion for the model (based on make selection), and a single callback to generate the charts. The chart codes were initially included in the `chart_functions.py` file and pulled into the callback function. This kept the code clean and neat and less than 150 lines.
 
 The code was struggling to render for some reason. I tested previous codes that I had used similar setups for, and they were working fine (not an issue with deprecation, etc.), and the debug error messages were not offering any help in figuring out what part of the code was not passing through properly. For the sake of getting some sort of MVP working, I decided to just refactor the code a bit to include it in the `app.layout...` portion. This is not my favorite way to set these up.
 
 I ended up using a conda environment, for no other reason but because I used it on my last project and it was fresh in my brain as the default. Otherwise, I typically use pip or venv.
+
+<br>
+<br>
 
 <!-- FUTURE CONSIDERATIONS -->
 ## Future Considerations
