@@ -57,13 +57,13 @@ To get a local copy up and running that may be faster, follow these steps:
 ```sh
 pip install -r requirements.txt
 ```
-<b>Note: </b> You may see a note about incompatibility between two requirements. The app should still be able to render.
-5) Navigate to the `src` file using `cd src`
-6) Run the following code:
+<b>Note: </b> You may see a note about incompatibility between two requirements. The app should still be able to render.<br>
+4) Navigate to the `src` file using `cd src`
+5) Run the following code:
 ```sh
 python3 app.py
 ```
-7) A localhost IP number will generate where you can access the development server to run the dashboard. Copy and pase this into a browser window.
+6) A localhost IP number will generate where you can access the development server to run the dashboard. Copy and pase this into a browser window.
 
 <br>
 <br>
