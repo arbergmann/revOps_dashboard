@@ -33,7 +33,7 @@ All brainstorming ideas, mock-ups, and decision logs can be found the `decision_
 
 <b>Time Commitment Breakdown:</b><br>
 - 1-2 hours brainstorming, building mock-ups
-- 24-26 hours building actual code and troubleshooting
+- 18-20 hours building actual code and troubleshooting
 - 3-4 hours formatting and trying a few different layout options
 - 3 hours code documentation, server testing
 
