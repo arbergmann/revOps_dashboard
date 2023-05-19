@@ -776,6 +776,6 @@ def competitor_analysis_charts(make_value, model_value):
 
 
 if __name__ == '__main__':
-    app.run(debug=False, port=8060)
+    app.run(debug=False)
 
 # %%
