@@ -55,7 +55,7 @@ To get a local copy up and running that may be faster, follow these steps:
 2) Navigate to the `revops_dashboard` directory in the CLI.
 3) Download the requirements with:
 ```sh
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 5) Navigate to the `src` file using `cd src`
 6) Run the following code:
