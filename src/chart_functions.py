@@ -128,6 +128,3 @@ def arima_predictions(purchase_data, ci=0.05):
                  inplace=True)
 
     return preds
-
-
-# %%

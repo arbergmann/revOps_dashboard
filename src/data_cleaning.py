@@ -49,6 +49,11 @@ opportunities['car_year'] = np.where(opportunities['car_year_interest'] >= 2010,
 competitors['car_year'] = np.where(competitors['car_year'] >= 2010, competitors['car_year'], random_yr[:len(competitors)])
 
 def generate_financials():
+    """ This code generates the financials dataset.
+    Returns:
+    financials (DataFrame) -- dataframe of financials with quarters in columns, line items as rows/index
+    """
+
     ### Generate financials
     years = [*range(2018, 2023, 1)]
     cols = []
@@ -106,6 +111,17 @@ def generate_financials():
         opex.append(round(new,2))
     opex = opex[::-1]
 
+    ## Marketing Expenses
+    start = opex[-1] * 0.25
+    marketing = [start]
+    for x in range(len(cols)-1):
+        new = marketing[-1] * (1 + random.uniform(-0.1, 0.1))
+        marketing.append(round(new,2))
+    marketing = marketing[::-1]
+
+    ## Other Op-ex Expenses
+    other_opex = np.subtract(np.array(opex), np.array(marketing))
+
     ## Operating Income
     op_income = np.subtract(np.array(gross_margin), np.array(opex))
 
@@ -125,6 +141,8 @@ def generate_financials():
             'total_revenue' : total_revs,
             'cost_goods_sold' : cogs,
             'gross_margin' : gross_margin,
+            'marketing' : marketing,
+            'other_opex' : other_opex,
             'operating_expenses' : opex,
             'operating_income' : op_income,
             'tax_expense' : tx_ex,
