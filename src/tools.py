@@ -28,6 +28,8 @@ def load_data():
 
     opportunities['opportunity_created'] = pd.to_datetime(opportunities['opportunity_created'])
     opportunities['month'] = opportunities['opportunity_created'].dt.month
+    opportunities['year'] = opportunities['opportunity_created'].dt.year
+    
     
     competitors['date_purchased'] = pd.to_datetime(competitors['date_purchased'])
     competitors['month'] = competitors['date_purchased'].dt.month
