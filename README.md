@@ -57,6 +57,7 @@ To get a local copy up and running that may be faster, follow these steps:
 ```sh
 pip install -r requirements.txt
 ```
+<b>Note: </b> You may see a note about incompatibility between two requirements. The app should still be able to render.
 5) Navigate to the `src` file using `cd src`
 6) Run the following code:
 ```sh
