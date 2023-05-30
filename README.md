@@ -55,14 +55,15 @@ To get a local copy up and running that may be faster, follow these steps:
 2) Navigate to the `revops_dashboard` directory in the CLI.
 3) Download the requirements with:
 ```sh
-pip install requirements.txt
+pip install -r requirements.txt
 ```
-5) Navigate to the `src` file using `cd src`
-6) Run the following code:
+<b>Note: </b> You may see a note about incompatibility between two requirements. The app should still be able to render.<br>
+4) Navigate to the `src` file using `cd src`
+5) Run the following code:
 ```sh
 python3 app.py
 ```
-7) A localhost IP number will generate where you can access the development server to run the dashboard. Copy and pase this into a browser window.
+6) A localhost IP number will generate where you can access the development server to run the dashboard. Copy and pase this into a browser window.
 
 <br>
 <br>
@@ -85,6 +86,7 @@ At this time, the code is fairly cumbersome. In the future, I would like to clea
 <!-- FUTURE CONSIDERATIONS -->
 ## Future Considerations
 
+
 Given more time, I would make this code much more flexible and clean, possibly exploring opportunities for it to be more OOP-based, though I am not sure at this time that that is the appropriate decision. A the time of initial writing, I focused on getting something up and running in the time I had left, but that meant sometimes making sacrifices in approach, dynamic coding, and layout. For example, the calculations of the overall statistics assume all data is clean and consistent. In reality, this will not always be the case. I would have liked to include unit tests to check for the following:
 - Checking date alignment (i.e. for things like `Opportunities` being created before `Purchases`)
 - Checking data for cleanliness and reasonableness as it arrives (i.e. are values within reasonable ranges? Is any data "fat fingered" to have an extra order of magnitude?)
@@ -92,11 +94,12 @@ Given more time, I would make this code much more flexible and clean, possibly e
 
 Some of the calculations were fairly rudimentary due to time constraints. I'd like to really dig into some of them more and flesh them out, check for contingencies that need to be incorporated from unclean or edge case data, etc.
 
-I would like to expand out the chart offerings, as mentioned in the `Brainstorming` tab of the `decision_log.xlsx` file. Obviously, in reality, this would be far more dependent on client needs, as well. I'd also like to make the drop downs to have multiple options. Since there are so any individualized makes/models, if perhaps you could choose 2-3 instead of all or nothing, that would lend itself better to insights.
+I would like to expand out the chart offerings, as mentioned in the `Brainstorming` tab of the `decision_log.xlsx` file. Obviously, in reality, this would be far more dependent on client needs and actual data availability, as well. I'd also like to make the drop downs to have multiple options so comparisons are easier. Since there are so any individualized makes/models, if perhaps you could choose 2-3 instead of all or nothing, that would lend itself better to insights.
 
 I felt the charts fell a little flat in terms of creativity and uniqueness, so I would like to expand on them more. Some ideas I would like to add/fix are:
 - Win rate by make/model (to provide insight on where to focus sales efforts based on success, can cross-reference with inventories, most sold, etc.)
 - Inventory counts and expenditure data/related charts/overlays on current charts (to see where inventories would need to be reduced/expanded, where price cuts may need to be made to move lower-demand products, etc.)
+- More granularity on the `Financial Analysis` tab to uncover where margins are compressing in certain products, and where leeway on pricing vs demand may be available.
 - Sales predictions outputs (to see where efforts on pricing should be focused, based on predictions)
 - Customer acquisition markdown is just a mess... layout issues, not formatting color properly, not returning the correct string values, etc.
 - Opportunities that do not turn to sales (to see where a product may be prohibitively expensive and pricing people out)
