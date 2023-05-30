@@ -85,7 +85,7 @@ At this time, the code is fairly cumbersome. In the future, I would like to clea
 <!-- FUTURE CONSIDERATIONS -->
 ## Future Considerations
 
-Given more time, I would make this code much more flexible and clean. A the time of initial writing, I focused on getting something up and running in the time I had left, but that meant sometimes making sacrifices in approach, dynamic coding and layout. For example, the calculations of the overall statistics assume all data is clean and consistent. In reality, this will not always be the case. I would have liked to include unit tests to check for the following:
+Given more time, I would make this code much more flexible and clean, possibly exploring opportunities for it to be more OOP-based, though I am not sure at this time that that is the appropriate decision. A the time of initial writing, I focused on getting something up and running in the time I had left, but that meant sometimes making sacrifices in approach, dynamic coding, and layout. For example, the calculations of the overall statistics assume all data is clean and consistent. In reality, this will not always be the case. I would have liked to include unit tests to check for the following:
 - Checking date alignment (i.e. for things like `Opportunities` being created before `Purchases`)
 - Checking data for cleanliness and reasonableness as it arrives (i.e. are values within reasonable ranges? Is any data "fat fingered" to have an extra order of magnitude?)
 - Dashboard chart rendering
