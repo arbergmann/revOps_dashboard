@@ -9,12 +9,18 @@ import numpy as np
 from datetime import datetime, date
 from dateutil.relativedelta import relativedelta
 import sys, os
-import chart_functions
+
+# Import user libraries
 import tools
+import chart_functions
+from sales_metrics_charts import yoy_sales_chart, sales_distribution_histogram, sunburst_chart, sales_metrics_tables
+from sales_lifecycle_charts import ttm_sales_cycle_days, ttm_sales_cycle_strip, ttm_win_rate, customer_acq_cost
+from financial_analysis_charts import income_statement, sankey_chart, revenue_funnel
+from competitor_analysis_charts import competitor_box_plots, pricing_deltas_list, benchmarking_chart
+
 
 # Load Data
 purchases, opportunities, competitors, financials = tools.load_data()
-
 
 # Spin up app
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
@@ -27,7 +33,8 @@ app.layout = html.Div([
     html.Div([
         # Title Banner
         html.H1("RevOps Dashboard for Used Car Sales", className="app_header__title", style={"textAlign":"center"}),
-        html.P("This app acts as a revenue ops dashboard for a fictional used car dealership, leveraging fictional data.", className="app__header_title--grey", style={"textAlign":"center"})
+        html.P("This app acts as a revenue ops dashboard for a fictional used car dealership, leveraging fictional data.", 
+               className="app__header_title--grey", style={"textAlign":"center"})
     ], className="app_header_desc"),
     html.Div([
         html.A(html.Button("SOURCE CODE", className="link-button", style={"textAlign":"right"}), href="https://github.com/arbergmann/revOps_dashboard"),
@@ -187,129 +194,17 @@ def sales_metrics_charts(make_value, model_value):
 
 
     ## Histogram
-    if ((make_value is None) and (model_value is None)) | ((make_value is None) and (model_value is not None)):
-        fig_hist = px.histogram(data, 
-                    x="car_make",
-                    histfunc='count',
-                    color_discrete_sequence=['#4287F5'])
-        fig_hist.update_xaxes(categoryorder="total descending", title='Make')
-        fig_hist.update_layout(title_text='Sales by Make (#)', title_x = 0.5, 
-                               xaxis_title='Make', yaxis_title='# Sold')
-
-    elif (make_value is not None) and (model_value is None):
-        fig_hist = px.histogram(data, 
-                    x="car_model",
-                    histfunc='count',
-                    color_discrete_sequence=['#4287F5'])
-        fig_hist.update_xaxes(categoryorder="total descending")
-        fig_hist.update_layout(title_text='Sales by Model (#)', title_x = 0.5, 
-                               xaxis_title='Model', yaxis_title='# Sold')
-
-    else:
-        fig_hist = px.histogram(data, 
-                    x="month",
-                    histfunc='count',
-                    color_discrete_sequence=['#4287F5'])
-        fig_hist.update_xaxes(categoryorder="total descending")
-        fig_hist.update_layout(title_text='Sales by Month (#)', title_x = 0.5, 
-                               xaxis_title='Month', yaxis_title='# Sold')
-
+    fig_hist = sales_distribution_histogram(make_value, model_value, data)
 
 
     ## YoY Sales
-    # Initialize dates
-    last_mth = pd.to_datetime(date.today() + relativedelta(months=-1, day=31)) # Get last day of previous month
-    lookback = pd.to_datetime(date.today() + relativedelta(months=-13, day=31))
-    prev_lookback_start = pd.to_datetime(date.today() + relativedelta(months=-13, day=31))
-    prev_lookback_end =  pd.to_datetime(date.today() + relativedelta(months=-25, day=31))
-
-    ttm = data[(data['date_purchased'] <= last_mth) & ((data['date_purchased'] > lookback))]
-    prev_ttm = data[(data['date_purchased'] <= prev_lookback_start) & ((data['date_purchased'] > prev_lookback_end))]
-
-    _1yr = ttm.groupby('month')['purchase_price'].sum()
-    _2yr = prev_ttm.groupby('month')['purchase_price'].sum()
-
-    # In filtering cases where the month has no sales, add 0 for that month
-    months = list(range(1,13))
-    _1yr_mths_needed = [x for x in months if x not in _1yr.index]
-    _2yr_mths_needed = [x for x in months if x not in _2yr.index]
-
-    if len(_1yr_mths_needed) > 0:
-        _1yr_zeros = np.zeros(len(_1yr_mths_needed))
-        _1yr_add = pd.Series(data=_1yr_zeros, index=_1yr_mths_needed)
-        _1yr = pd.concat([_1yr, _1yr_add]).sort_index()
-    
-    if len(_2yr_mths_needed) > 0:
-        _2yr_zeros = np.zeros(len(_2yr_mths_needed))
-        _2yr_add = pd.Series(data=_2yr_zeros, index=_2yr_mths_needed)
-        _2yr = pd.concat([_2yr, _2yr_add]).sort_index()
-
-    # Set names for columns/legend later
-    _1yr.name = 'ttm'
-    _2yr.name = 'prev_ttm'
-
-    # Get the months in the right order
-    last_mth_idx = (date.today() + relativedelta(months=-1)).month
-    _1yr = pd.concat([_1yr[last_mth_idx:], _1yr[:last_mth_idx]])
-    _2yr = pd.concat([_2yr[last_mth_idx:], _2yr[:last_mth_idx]])
-
-    _1yr.index = list(range(-12,0,1))
-    _2yr.index = list(range(-12,0,1))
-
-    ttm_all = pd.DataFrame(_1yr)
-    ttm_all = pd.concat([ttm_all, _2yr], axis=1)
-    ttm_all = ttm_all.reset_index().rename(columns={'index' : 'month_delta'})
-
-    fig_yoy = go.Figure()
-    # Add historical
-    fig_yoy.add_trace(go.Scatter(x=ttm_all['month_delta'], y=ttm_all['ttm'], name="TTM", fill=None, line=dict(color='#4285F4', width=4)))
-    fig_yoy.add_trace(go.Scatter(x=ttm_all['month_delta'], y=ttm_all['prev_ttm'], name="Previous TTM",  fill=None, opacity=.6, line=dict(color='#4285F4', dash='dot', width=4)))
-    try:
-        # Add predictions (lb, mean, ub), if possible
-        arima_predictions = chart_functions.arima_predictions(data, ci=0.10)
-        # Add a row with most recent data so that the charts connect, converging at point
-        last_mth_row = pd.DataFrame({'month_delta' : -1, 'predicted_sales' : ttm_all['ttm'].tail(1), 
-                                    'prediction_lower_bound' : ttm_all['ttm'].tail(1),
-                                    'prediction_upper_bound' : ttm_all['ttm'].tail(1)})
-        arima_predictions = pd.concat([last_mth_row, arima_predictions], axis=0)
-        
-        # Add to figure
-        fig_yoy.add_trace(go.Scatter(x=arima_predictions['month_delta'], y=arima_predictions['prediction_lower_bound'], name='Predicted Sales Lower    ', 
-                                    fill=None, opacity=0.2, line=dict(color='#224680', width=2)))
-        fig_yoy.add_trace(go.Scatter(x=arima_predictions['month_delta'], y=arima_predictions['predicted_sales'], 
-                                    fill='tonexty', name='Predicted Sales', line=dict(color='#224680', dash='dash', width=4)))
-        fig_yoy.add_trace(go.Scatter(x=arima_predictions['month_delta'], y=arima_predictions['prediction_upper_bound'], name='Predicted Sales Upper    ',  
-                                    fill='tonexty', opacity=0.2, line=dict(color='#224680', width=2)))
-        fig_yoy.add_annotation(x=2, y=max(max(ttm_all['ttm']), max(ttm_all['prev_ttm'])), showarrow=False,
-                               text=f'Forecasting CI: 90%')
-    except:
-        # If not possible, will just leave one level up of charts
-        fig_yoy.add_annotation(x=-1, y=max(max(ttm_all['ttm']), max(ttm_all['prev_ttm'])), showarrow=False,
-                               text=f'Forecasting not<br>available for<br>{make_value} : {model_value}')
-        pass
-    fig_yoy.update_layout(title_text='Year-over-Year Sales and 3-Month Forecast ($)', title_x = 0.5, 
-                          xaxis_title='Month Delta', yaxis_title='Total Sales ($)',
-                          annotations=[go.layout.Annotation(xanchor='right', yanchor='top')])
+    fig_yoy = yoy_sales_chart(data)
 
     ## Sunburst breakdown
-    fig_sburst = px.sunburst(data, 
-                      path=pth, 
-                      values='purchase_price', 
-                      color_continuous_scale=['#FFFFFF', '#4285F4', '#224680'], # Not working...?
-                      )
-    fig_sburst.update_layout(title_text='Sales Breakdown by Type (%)', title_x = 0.5)
+    fig_sburst = sunburst_chart(data, pth)
 
     ## Tables
-    if make_value == None:
-        top_5_sales = data.groupby('car_make')['purchase_price'].sum().sort_values(ascending=False).head(10).apply(lambda x: f"${x/1000:,.0f}k")\
-                        .reset_index().rename(columns={'car_make' : 'Car Make', 'purchase_price' : 'Top 10 Total Sales'})
-        top_5_count = data.groupby('car_make')['purchase_price'].count().sort_values(ascending=False).head(10)\
-                    .reset_index().rename(columns={'car_make' : 'Car Make', 'purchase_price' : 'Top 10 Total Count'})
-    else:
-        top_5_sales = data.groupby('car_model')['purchase_price'].sum().sort_values(ascending=False).head(10).apply(lambda x: f"${x/1000:,.0f}k")\
-                        .reset_index().rename(columns={'car_model' : 'Car Model', 'purchase_price' : 'Top 10 Total Sales'})
-        top_5_count = data.groupby('car_model')['purchase_price'].count().sort_values(ascending=False).head(10)\
-                    .reset_index().rename(columns={'car_model' : 'Car Model', 'purchase_price' : 'Top 10 Total Count'})
+    top_5_sales, top_5_count = sales_metrics_tables(make_value, data)
 
     ## Return all charts back to tab
     return [html.Div([dcc.Graph(figure=fig_yoy)],className="row"),
@@ -370,102 +265,17 @@ def sales_lifecycle_charts(make_value, model_value):
 
 
     ## Trailing Twelve Months Sales Lifecycle Chart
-    ttm_data = data_p.copy()
-    ttm_data['time_delta'] = ttm_data['date_purchased'] - ttm_data['opportunity_created']
-    ttm_data['time_delta'] = ttm_data['time_delta'].apply(lambda x: x.days)
-    
-    ttm_sales = ttm_data.groupby(['year', 'month'])['time_delta'].mean().reset_index()
-    ttm_sales = ttm_sales.tail(12)
-    ttm_sales['label'] = ttm_sales['year'].apply(lambda x: str(x)) + '_' + ttm_sales['month'].apply(lambda x: str(x))
-    
-    fig_ttm_cycle = go.Figure()
-    fig_ttm_cycle.add_trace(go.Scatter(x=ttm_sales['label'], y=ttm_sales['time_delta'], 
-                                       fill=None, mode='lines', line=dict(color='#4285F4', width=4)))
-    fig_ttm_cycle.update_layout(title_text='TTM Sales Cycle Trend', title_x = 0.5, 
-                          xaxis_title='Month', yaxis_title='TTM Sales Cycle Days')
+    fig_ttm_cycle = ttm_sales_cycle_days(data_p)
 
     ## Trailing Twelve Months Sales Lifecycle by Model - Strip
-    if make_value == None:
-        ttm_sales = ttm_data[(ttm_data['date_purchased'] <= pd.to_datetime(date.today())) & (ttm_data['date_purchased'] >= pd.to_datetime(date.today() + relativedelta(months=-13)))]
-        fig_strip_sales = px.strip(ttm_sales, x='time_delta', y='car_make', color_discrete_sequence=["#4287F5"])
-        fig_strip_sales.update_layout(title_text='TTM Sales Cycle by Make', title_x = 0.5, 
-                          xaxis_title='TTM Sales Cycle Days', yaxis_title='Car Make')
-    else:
-        ttm_sales = ttm_data[(ttm_data['date_purchased'] <= pd.to_datetime(date.today())) & (ttm_data['date_purchased'] >= pd.to_datetime(date.today() + relativedelta(months=-13)))]
-        fig_strip_sales = px.strip(ttm_sales, x='time_delta', y='car_model', color_discrete_sequence=["#4287F5"])
-        fig_strip_sales.update_layout(title_text='TTM Sales Cycle by Model', title_x = 0.5, 
-                          xaxis_title='TTM Sales Cycle Days', yaxis_title='Car Model')
+    fig_strip_sales = ttm_sales_cycle_strip(make_value, data_p)
 
     ## Trailing Twelve Months Win Rate
-    ttm_data_p = data_p.copy()
-    ttm_data_o = data_o.copy()
-
-    # Get total counts for each month
-    ttm_purch = ttm_data_p.groupby(['year','month'])['date_purchased'].count().reset_index()
-    ttm_opps = ttm_data_o.groupby(['year','month'])['opportunity_created'].count().reset_index()
-
-    # Get rolling sum for each month - purchases=6m, opportunities=12m
-    ttm_purch['rolling_purchases'] = ttm_purch['date_purchased'].rolling(6).sum()
-    ttm_opps['rolling_opportunities'] = ttm_opps['opportunity_created'].rolling(12).sum()
-
-    # Get win rates
-    ttm_winrt = pd.merge(ttm_purch, ttm_opps, how='outer', on=['year','month']).sort_values(by=['year','month'])
-    ttm_winrt['win_rt'] = ttm_winrt['rolling_purchases'] / (ttm_winrt['rolling_purchases'] + ttm_winrt['rolling_opportunities']) * 100
-    ttm_winrt = ttm_winrt.tail(12)
-    ttm_winrt['label'] = ttm_winrt['year'].apply(lambda x: str(x)) + '_' + ttm_winrt['month'].apply(lambda x: str(x))
-
-    fig_ttm_winrt = px.line(ttm_winrt, x='label', y='win_rt')
-    fig_ttm_winrt.update_layout(title_text='TTM Win Rate', title_x = 0.5, 
-                          xaxis_title='Month', yaxis_title='Win Rate (%)')
-
-    fig_ttm_winrt = go.Figure()
-    fig_ttm_winrt.add_trace(go.Scatter(x=ttm_winrt['label'], y=ttm_winrt['win_rt'], 
-                                       fill=None, mode='lines', line=dict(color='#4285F4', width=4)))
-    fig_ttm_winrt.update_layout(title_text='Win Rate by Month', title_x = 0.5, 
-                            xaxis_title='Quarter', yaxis_title='Win Rate (%)')
-
+    fig_ttm_winrt = ttm_win_rate(data_p, data_o)
 
     ## Customer Acquisition Trends
-    mth_q_dict = {1 : "_q1", 2 : "_q1", 3 : "_q1",
-              4 : "_q2", 5 : "_q2", 6 : "_q2",
-              7 : "_q3", 8 : "_q3", 9 : "_q3",
-              10 : "_q4", 11 : "_q4", 12 : "_q4"}
+    fig_cust_cost, trend_yoy, trend_qoq, _, _ = customer_acq_cost(data_p, financials)
 
-    new_customer_count = data_p.groupby(['year', 'month'])['date_purchased'].count().reset_index()
-    new_customer_count['quarter'] = new_customer_count['year'].apply(lambda x: str(x)) + new_customer_count['month'].apply(lambda x: mth_q_dict[x])
-    new_customer_count = new_customer_count.groupby('quarter')['date_purchased'].sum()
-
-    marketing_exp = financials.T['marketing']
-
-    cust_acq_cost = pd.concat([new_customer_count,marketing_exp], axis=1, join='inner')
-    cust_acq_cost['customer_acquisition_cost'] = cust_acq_cost.marketing / cust_acq_cost.date_purchased
-
-    # Markdown Outputs
-    if cust_acq_cost['marketing'][-1] > cust_acq_cost['marketing'][-2]:
-        trend_qoq = """HIGHER"""
-        trend_qoq_color = "red"
-    elif cust_acq_cost['marketing'][-1] < cust_acq_cost['marketing'][-2]:
-        trend_qoq = """LOWER"""
-        trend_qoq_color = "green"
-    else:
-        trend_qoq = """FLAT"""
-        trend_qoq_color = "grey"
-
-    if cust_acq_cost['marketing'][-1] > cust_acq_cost['marketing'][-5]:
-        trend_yoy = """HIGHER"""
-        trend_yoy_color = "red"
-    elif cust_acq_cost['marketing'][-1] < cust_acq_cost['marketing'][-5]:
-        trend_yoy = """LOWER"""
-        trend_yoy_color = "green"
-    else:
-        trend_yoy = """FLAT"""
-        trend_yoy_color = "grey"
-
-    fig_cust_cost = go.Figure()
-    fig_cust_cost.add_trace(go.Scatter(x=cust_acq_cost.index, y=cust_acq_cost['customer_acquisition_cost'], 
-                                       fill=None, mode='lines', line=dict(color='#4285F4', width=4)))
-    fig_cust_cost.update_layout(title_text='Customer Acquisition Cost by Quarter', title_x = 0.5, 
-                            xaxis_title='Quarter', yaxis_title='Customer Acquisition Cost ($)')
 
     return [html.Div([
                 html.H2("Sales Cycle Time", style={"textAlign":"center"}),
@@ -544,55 +354,13 @@ def financial_analysis_charts(slider_output):
     global financials
 
     ## Financial Statements
-    qoq_pct_change = financials.iloc[:,-1] / financials.iloc[:,-2] - 1
-    qoq_pct_change = qoq_pct_change.apply(lambda x: "{0:.2f}%".format(x*100))
-    qoq_pct_change.name = 'Q/Q Chg'
-
-    yoy_pct_change = financials.iloc[:,-1] / financials.iloc[:,-5] - 1
-    yoy_pct_change = yoy_pct_change.apply(lambda x: "{0:.2f}%".format(x*100))
-    yoy_pct_change.name = 'Y/Y Chg'
-
-    financial_statements = pd.concat([financials.iloc[:,-1].apply(lambda x: f"${x/1000:,.0f}"), 
-                                    financials.iloc[:,-2].apply(lambda x: f"${x/1000:,.0f}"), 
-                                    qoq_pct_change, 
-                                    financials.iloc[:,-5].apply(lambda x: f"${x/1000:,.0f}"), 
-                                    yoy_pct_change], axis=1)
-    financial_statements.columns = [x.upper().replace('_',' ') for x in list(financial_statements.columns)]
-    financial_statements.index.rename('Line Item', inplace=True)
-    financial_statements.reset_index(inplace=True)
-    financial_statements['Line Item'] = financial_statements['Line Item'].apply(lambda x: x.upper().replace('_',' '))
+    financial_statements = income_statement(financials)
 
     ## Sankey Chart
-    fin = financials['2023_q1'].values
-
-    fig_sankey = go.Figure(data=[go.Sankey(
-                                node=dict(
-                                    pad=15,
-                                    thickness=20,
-                                    line=dict(color="black", width=0.5),
-                                    label=["Car Sales Revenue", "Rental Revenue", "Financing Revenue", "Gross Revenue", "Cost of Goods Sold", 
-                                        "Gross Margin", "Operating Expenses", "Operating Income", "Tax Expense", "Net Income"],
-                                    color="#4285F4"
-                                ),
-                                link=dict(
-                                    source = [0,1,2,3,3,5,5,7,7],
-                                    target = [3,3,3,4,5,6,7,8,9],
-                                    value = [fin[0], fin[1], fin[2], fin[4], fin[5], fin[8], fin[9], fin[10], fin[11]]
-                                )
-                            )])
-    fig_sankey.update_layout(title=dict(text="Income Statement Breakdown"), title_x = 0.5)
+    fig_sankey = sankey_chart(financials, '2023_q1')
 
     ## Revenue Funnel
-    fin = financials.T.tail(5)[['car_sales_revenues', 'rental_revenues', 'financing_revenues']]
-    fin = fin.iloc[::-1]
-    stages = list(fin.index)
-
-    fig_funnel = go.Figure()
-
-    fig_funnel.add_trace(go.Funnel(name='Car Sales Rev', y=stages, x=fin['car_sales_revenues'], marker={"color": "#4285F4"}, textinfo='value'))
-    fig_funnel.add_trace(go.Funnel(name='Rental Rev', y=stages, x=fin['rental_revenues'], marker={"color": "#3469BF"}, textinfo='value'))
-    fig_funnel.add_trace(go.Funnel(name='Financing Rev', y=stages, x=fin['financing_revenues'], marker={"color": "#224680"}, textinfo='value'))
-    fig_funnel.update_layout(title=dict(text="Year-Over-Year Revenue Mix"), title_x = 0.5)
+    fig_funnel = revenue_funnel(financials)
 
     return [html.Div([
                 html.Div([dcc.Markdown("**Note:** These charts do not change by filtering at this time.")], style={"textAlign":"center", "verticalAlign":"center"}),
@@ -608,6 +376,8 @@ def financial_analysis_charts(slider_output):
                 html.Hr(),
                 html.Div([dcc.Graph(figure=fig_funnel)], className='row'),
     ])]
+
+
 
 ##################################
 ### Competitor Analysis Charts ###
@@ -658,9 +428,9 @@ def competitor_analysis_charts(make_value, model_value):
         data_p = data_p[(data_p['car_make'] == make_value) & (data_p['car_model'].isin(intersection))]
         data_c = data_c[(data_c['car_make'] == make_value) & (data_c['car_model'].isin(intersection))]
 
-    
-    ## If no competitor data for provided make/model, return error message
+
     if (model_value is not None) and ((len(intersection) == 0) or (model_value not in intersection)):
+         ## If no competitor data for provided make/model, return error message
         return [html.Div([
                     html.Div([dcc.Markdown(f"""
                     No competitor data available for combination
@@ -672,51 +442,9 @@ def competitor_analysis_charts(make_value, model_value):
 
     else:
         ## Competitor Price Box Plots
-        if ((make_value is None) and (model_value is None)) | ((make_value is None) and (model_value is not None)):
-
-            fig_boxes = px.box(data_c, x='car_make', y='purchase_price', title='Price Comparison by Make',
-                               color_discrete_sequence=["#4287F5"], labels={'car_make':'Car Make'})
-            fig_boxes.update_xaxes(categoryorder='category ascending')
-
-            company_avgs = data_p.groupby('car_make')['purchase_price'].mean()
-            x2 = company_avgs.index
-            company_avgs = company_avgs.values
-
-            fig_boxes.layout.xaxis2 = go.layout.XAxis(overlaying='x', range=[0,len(x2)], showticklabels=False)
-
-            for i in range(len(x2)):
-                bargap = 0.1
-                x = [i, i+1]
-                y = [company_avgs[i], company_avgs[i]]
-                scatt = fig_boxes.add_scatter(x=x, y=y, mode='lines', xaxis='x2', 
-                                              showlegend=False, line={'color':'#993729', 'width':2})
-
-            fig_boxes.update_layout(title_text='Price Comparison by Model', title_x = 0.5, 
-                                    xaxis_title='Car Model', yaxis_title='Average Price', showlegend=False)
-
-        else:
-            fig_boxes = px.box(data_c, x='car_model', y='purchase_price', color_discrete_sequence=["#4287F5"], )
-            fig_boxes.update_xaxes(categoryorder='category ascending')
-
-            company_avgs = data_p.groupby('car_model')['purchase_price'].mean()
-            x2 = company_avgs.index
-            company_avgs = company_avgs.values
-
-            fig_boxes.layout.xaxis2 = go.layout.XAxis(overlaying='x', range=[0,len(x2)], showticklabels=False)
-
-            for i in range(len(x2)):
-                bargap = 0.1
-
-                x = [i, i+1]
-                y = [company_avgs[i], company_avgs[i]]
-                scatt = fig_boxes.add_scatter(x=x, y=y, mode='lines', xaxis='x2', 
-                                              showlegend=False, line={'color':'#993729', 'width':2})
-            
-            fig_boxes.update_layout(title_text='Price Comparison by Make', title_x = 0.5, 
-                                    xaxis_title='Car Make', yaxis_title='Average Price', showlegend=False)
-
-
-        # Top opportunities for pricing increases
+        fig_boxes = competitor_box_plots(make_value, model_value, data_c, data_p)
+    
+        ## Top opportunities for pricing increases
         if make_value is None:
             competitor_meds = pd.DataFrame(competitors.groupby('car_make')['purchase_price'].median()).rename(columns={'purchase_price':'Competitor Median'})
             purchase_avgs = pd.DataFrame(purchases.groupby(['car_make']).agg({'purchase_price' : [np.mean, 'count']}).droplevel(axis=1, level=0)).rename(columns={'mean': 'Average Price', 'count':'Count'})
@@ -725,38 +453,11 @@ def competitor_analysis_charts(make_value, model_value):
             competitor_meds = pd.DataFrame(competitors.groupby('car_model')['purchase_price'].median()).rename(columns={'purchase_price':'Competitor Median'})
             purchase_avgs = pd.DataFrame(purchases.groupby(['car_model']).agg({'purchase_price' : [np.mean, 'count']}).droplevel(axis=1, level=0)).rename(columns={'mean': 'Average Price', 'count':'Count'})
 
-        pricing_deltas = pd.concat([competitor_meds, purchase_avgs], axis=1, join='inner', ignore_index=False)
-        pricing_deltas['pricing_delta'] = pricing_deltas['Average Price'] - pricing_deltas['Competitor Median']
-        pricing_deltas['pricing_delta_pct'] = pricing_deltas['Average Price'] / pricing_deltas['Competitor Median'] - 1
-        pricing_deltas['Opportunity Cost'] = pricing_deltas['pricing_delta'] * pricing_deltas['Count']
-        pricing_deltas.sort_values('Opportunity Cost', ascending=True, inplace=True)
-        pricing_deltas = pricing_deltas.rename(columns={'pricing_delta_pct' : 'Pricing Delta (%)', 'pricing_delta' : 'Pricing Delta ($)'}).head(10)
-
-        for col in ['Average Price', 'Competitor Median', 'Pricing Delta ($)', 'Opportunity Cost']:
-            pricing_deltas[col] = pricing_deltas[col].apply(lambda x: f"${x/1000:,.0f}k")
-        pricing_deltas['Pricing Delta (%)'] = pricing_deltas['Pricing Delta (%)'].apply(lambda x: "{0:.2f}%".format(x*100))
-        pricing_deltas.index.rename(' ', inplace=True)
-        pricing_deltas.reset_index(inplace=True)
-        
+        # Pricing Deltas
+        pricing_deltas = pricing_deltas_list(competitor_meds, purchase_avgs)
 
         ## Benchmarking
-        c_tmp = competitors.groupby('car_tier')['purchase_price'].quantile([0.25, 0.5, 0.75, 0.9]).reset_index()
-        c_tmp = c_tmp.rename(columns={'level_1' : 'percentile'})
-        c_tmp = pd.pivot_table(c_tmp, values='purchase_price', index='car_tier', columns='percentile')
-        c_tmp.columns = [str(x) for x in c_tmp.columns]
-        
-        p_tmp = purchases.groupby('car_tier')['purchase_price'].mean()
-
-        x = c_tmp.index
-        fig_line = go.Figure()
-        fig_line.add_trace(go.Scatter(x=x, y=c_tmp['0.25'], fill=None, mode='lines', line_color='#112340', name='25th Percentile'))
-        fig_line.add_trace(go.Scatter(x=x, y=c_tmp['0.5'], fill='tonexty', mode='lines', line_color='#224680', name='Median'))
-        fig_line.add_trace(go.Scatter(x=x, y=c_tmp['0.75'], fill='tonexty', mode='lines', line_color='#3469BF', name='75th Percentile'))
-        fig_line.add_trace(go.Scatter(x=x, y=c_tmp['0.9'], fill='tonexty', mode='lines', line_color='#4287F5', name='90th Percentile'))
-        fig_line.add_trace(go.Scatter(x=x, y=p_tmp.values, fill=None, mode='lines', name='Company Avg', line=dict(dash="dash", color='#993729', width=2)))
-        fig_line.update_xaxes(title='Tier', tickangle=45)
-        fig_line.update_yaxes(title='Average Sales Price')
-        fig_line.update_layout(title_text="Product Benchmark Comparison by Tier", title_x = 0.5)
+        fig_line = benchmarking_chart(competitors, purchases)
 
         ## Return all charts back to tab
         return [html.Div([
@@ -775,7 +476,7 @@ def competitor_analysis_charts(make_value, model_value):
         ]
 
 
+
 if __name__ == '__main__':
     app.run(debug=False)
-
 # %%

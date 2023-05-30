@@ -4,6 +4,15 @@ import numpy as np
 import os, sys
 import random
 
+"""
+This is a single-use script for creating the overall datasets.
+
+This includes collating Mockaroo datasets, generating financial dataset,
+making some formatting edits to all datasets, and re-saving them in
+the proper format to feed into the app.py file.
+"""
+
+
 path = os.path.dirname(os.getcwd()) + '/assets'
 
 # Collate purchases

@@ -1,5 +1,6 @@
 #%%
 import plotly.express as px
+import plotly.graph_objects as go
 from datetime import datetime, date
 from dateutil.relativedelta import relativedelta
 from statsmodels.tsa.arima.model import ARIMA, ARIMAResults
@@ -7,6 +8,13 @@ from warnings import catch_warnings, filterwarnings
 import pandas as pd
 import numpy as np
 
+"""
+The code for the app.py can be quite cumbersome as it is managing an entire app.
+
+So, to clean up the code a little bit, I have implemented some functions here
+that act as helper functions for various charts and markdowns, that will help 
+to condense the other code a little bit.
+"""
 
 def purchase_count(data):
     """ Calculate the count of purchases made.

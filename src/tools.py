@@ -1,6 +1,7 @@
 import os
 import pandas as pd
 import numpy as np
+from dateutil.relativedelta import relativedelta
 
 def load_data():
     """ Load the data into the code from csv files.
@@ -35,3 +36,4 @@ def load_data():
     competitors['month'] = competitors['date_purchased'].dt.month
 
     return purchases, opportunities, competitors, financials
+
