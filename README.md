@@ -7,7 +7,7 @@ a mock dashboard for revenue operations and pricing
 
 This is an sample dashboard that I put together for revenue operations and pricing. At this juncture, it leverages Dash/Plotly and is fairly rudamentary. I intend on expanding it out in the near future as time allows.
 
-<b>How to interpret this project</b>
+<b>How to interpret this project</b><br>
 First and foremost, at the current stage, it is essentially a minimum viable product (well...more like pre-MVP). It is written for an audience that is primarily a pricing and monetization team that looks at pricing and value alignment, along with business strategy as it pertains to sales demand.
 
 Initially, just as a passing thought and data availability, I decided to use car sales. When years were given as an option, I decided "used car sales" may be a better option, since it gave me more opportunities for breakdowns in charts down the lines. Eventually, I grew to regret this, as it ended up making some charts messy with all of the extensive breakdowns on already very individualized data. I tried to remedy this with batching additional data and restricting years to >=2010, and it helped a bit in certain cases.
@@ -57,7 +57,8 @@ To get a local copy up and running that may be faster, follow these steps:
 ```sh
 pip install -r requirements.txt
 ```
-<b>Note: </b> You may see a note about incompatibility between two requirements. The app should still be able to render.<br>
+<b>Note: </b> You may see a note about incompatibility between two requirements. The app should still be able to render.
+<br>
 4) Navigate to the `src` file using `cd src`
 5) Run the following code:
 ```sh
